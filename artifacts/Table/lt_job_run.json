@@ -1,0 +1,51 @@
+{
+	"id": "037b4285-4f23-4d4f-b122-4bb68f0f4a3c",
+	"createdAt": "2026-10-28T12:06:23.963Z",
+	"createdBy": "gunnar",
+	"fields": [
+		{
+			"id": "737b322e-2b84-4456-8577-b302afc12127",
+			"fieldName": "job",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Job"
+		},
+		{
+			"id": "5d8383f1-f89e-4bec-b791-627472f67941",
+			"fieldName": "processed",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Rows processed"
+		},
+		{
+			"id": "45a14be3-1bab-47df-8544-f11c36c25b5f",
+			"fieldName": "durationMs",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Duration ms"
+		},
+		{
+			"id": "b7d19a19-7b6e-4617-871e-c17554193923",
+			"fieldName": "details",
+			"fieldType": "mediumtext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Details"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"vectorStoreConfig": null,
+	"name": "lt_job_run",
+	"description": "Job execution log written by the LoadTest jobs",
+	"ver": "26.10.28.1306",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"generationStrategy": null,
+	"rolesRead": [],
+	"rolesWrite": []
+}

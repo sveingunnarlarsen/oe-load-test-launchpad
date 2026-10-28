@@ -1,0 +1,17 @@
+{
+	"id": "1114aec0-368c-43a6-90e4-9a764e62d1a5",
+	"createdAt": "2026-10-28T12:27:43.437Z",
+	"createdBy": "gunnar",
+	"settings": {
+		"tableid": "037b4285-4f23-4d4f-b122-4bb68f0f4a3c",
+		"hasDocumentation": false
+	},
+	"documentation": [],
+	"name": "LoadTest Job Runs",
+	"description": "Table connector on job_runs",
+	"group": null,
+	"type": "T",
+	"ver": "26.10.28.1327",
+	"disabled": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230"
+}

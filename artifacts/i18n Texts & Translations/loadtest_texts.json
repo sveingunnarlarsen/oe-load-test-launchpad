@@ -1,0 +1,58 @@
+{
+	"id": "48fe6720-489d-4307-98d8-8bb736d20c04",
+	"createdAt": "2026-10-28T10:26:17.114Z",
+	"createdBy": "gunnar",
+	"attributes": [
+		{
+			"name": "title",
+			"text": "Load Test",
+			"de": {
+				"text": "Lasttest"
+			},
+			"no": {
+				"text": "Lasttest"
+			},
+			"id": "0ebb6f7d-e8ab-46fb-87a0-ef15ebd1f1b8"
+		},
+		{
+			"name": "refresh",
+			"text": "Refresh",
+			"de": {
+				"text": "Aktualisieren"
+			},
+			"no": {
+				"text": "Oppdater"
+			},
+			"id": "25a783ab-4623-407f-81b8-225ca4a905a7"
+		},
+		{
+			"name": "submit",
+			"text": "Submit",
+			"de": {
+				"text": "Senden"
+			},
+			"no": {
+				"text": "Send"
+			},
+			"id": "3223f0ac-533b-4c5a-9e10-24b629862310"
+		}
+	],
+	"locales": [
+		{
+			"isoCode": "EN",
+			"locale": "en"
+		}
+	],
+	"name": "loadtest_texts",
+	"description": "Shared texts for the load test apps",
+	"fallbackLocale": "en",
+	"application": null,
+	"ver": "26.10.28.1126",
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"active": true,
+	"deleted": false,
+	"baseModelId": null,
+	"enhancedBy": [],
+	"baseModel": null,
+	"apps": []
+}

@@ -1,0 +1,241 @@
+{
+	"id": "61c5f87a-60af-4058-afd3-bf60d0537851",
+	"createdAt": "2026-10-28T10:28:23.796Z",
+	"createdBy": "gunnar",
+	"settings": {
+		"properties": {
+			"report": {
+				"title": "Orders",
+				"subTitle": "Adaptive list over lt_order",
+				"autoRun": true,
+				"autoRunFocus": true,
+				"enableRun": false,
+				"enableCreate": true,
+				"enableDelete": true,
+				"enableExport": true,
+				"enableMultiSelect": false,
+				"enableVariant": false,
+				"hideHeader": false,
+				"textButtonCreate": "Add",
+				"typeButtonCreate": "Transparent",
+				"iconButtonExport": "sap-icon://excel-attachment",
+				"typeButtonExport": "Transparent",
+				"searchLabel": "Search",
+				"searchPlaceholder": "",
+				"textConfirmDelete": "Do you want to delete this entry?",
+				"titleConfirmDelete": "Delete",
+				"_navigationCreate": {
+					"destinationType": "F",
+					"openAs": "D",
+					"butType": "Accept",
+					"destinationTargetF": "348a2f0a-f4d8-4f32-8182-8f379b773a70",
+					"keyField": [],
+					"dialogHeight": "600px"
+				},
+				"_navigationItemPress": {
+					"destinationType": "F",
+					"openAs": "D",
+					"butType": "Accept",
+					"destinationTargetF": "348a2f0a-f4d8-4f32-8182-8f379b773a70",
+					"keyField": [],
+					"dialogHeight": "600px"
+				}
+			},
+			"form": {},
+			"table": {}
+		},
+		"fieldCatalog": [
+			{
+				"name": "orderNo",
+				"label": "Order No",
+				"type": "smalltext",
+				"usage": "BOTH"
+			},
+			{
+				"name": "customer",
+				"label": "Customer",
+				"type": "smalltext",
+				"usage": "BOTH"
+			},
+			{
+				"name": "product",
+				"label": "Product",
+				"type": "smalltext",
+				"usage": "BOTH"
+			},
+			{
+				"name": "quantity",
+				"label": "Quantity",
+				"type": "integer",
+				"usage": "BOTH"
+			},
+			{
+				"name": "amount",
+				"label": "Amount",
+				"type": "decimal",
+				"usage": "BOTH"
+			},
+			{
+				"name": "status",
+				"label": "Status",
+				"type": "smalltext",
+				"usage": "BOTH"
+			},
+			{
+				"name": "notes",
+				"label": "Notes",
+				"type": "mediumtext",
+				"usage": "BOTH"
+			},
+			{
+				"name": "createdAt",
+				"label": "Created At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			},
+			{
+				"name": "createdBy",
+				"label": "Created By",
+				"type": "text",
+				"usage": "BOTH"
+			},
+			{
+				"name": "updatedAt",
+				"label": "Updated At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			},
+			{
+				"name": "updatedBy",
+				"label": "Updated By",
+				"type": "text",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [
+			{
+				"name": "status",
+				"text": "Status",
+				"visible": true,
+				"fieldPos": 1
+			},
+			{
+				"name": "customer",
+				"text": "Customer",
+				"visible": true,
+				"fieldPos": 2
+			}
+		],
+		"fieldsRun": [
+			{
+				"name": "orderNo",
+				"text": "Order No",
+				"fieldPos": 1,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "customer",
+				"text": "Customer",
+				"fieldPos": 2,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "product",
+				"text": "Product",
+				"fieldPos": 3,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "quantity",
+				"text": "Quantity",
+				"fieldPos": 4,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "amount",
+				"text": "Amount",
+				"fieldPos": 5,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "status",
+				"text": "Status",
+				"fieldPos": 6,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "updatedAt",
+				"text": "Updated At",
+				"fieldPos": 7,
+				"visible": true,
+				"enableFilter": false,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block",
+				"formatter": "date00",
+				"width": "200px"
+			}
+		],
+		"defaultVariant": {
+			"id": "be9e517a-3b61-49f6-aa19-4386d4f6803a",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		},
+		"translation": {
+			"EN": {
+				"report": {},
+				"form": {},
+				"table": {},
+				"fieldCatalog": {}
+			}
+		},
+		"table": "lt_order"
+	},
+	"name": "lt_orders_list",
+	"description": "LoadTest orders",
+	"group": "LoadTest",
+	"type": "C",
+	"connectorid": "9dbb9694-abb2-4dd7-a178-f148b406d7d9",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "26.10.28.1128",
+	"disabled": false,
+	"appType": "A",
+	"application": "neptunedxp_adaptive_list",
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null,
+	"i18n": []
+}

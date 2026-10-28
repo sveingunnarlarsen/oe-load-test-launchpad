@@ -1,0 +1,70 @@
+{
+	"id": "3d8c9036-fa22-4f1a-93d5-30fb44828bdd",
+	"createdAt": "2026-10-28T12:06:23.849Z",
+	"createdBy": "gunnar",
+	"fields": [
+		{
+			"id": "0b09aa1e-a49f-44e5-bf1b-986c247cc3e1",
+			"fieldName": "customer",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Customer"
+		},
+		{
+			"id": "c08e9475-3219-4e4c-95cc-3c677be76ffd",
+			"fieldName": "orderCount",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Orders"
+		},
+		{
+			"id": "f96ec3f6-a3c0-4b9d-8c7f-9db79a0886b2",
+			"fieldName": "totalAmount",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Total amount",
+			"precision": 14,
+			"scale": 2
+		},
+		{
+			"id": "1dba71b5-484d-457e-bffa-59a7f687718c",
+			"fieldName": "lastOrderAt",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Last order"
+		}
+	],
+	"indices": [
+		{
+			"id": "7f9e7ef1-cfae-4b60-bfc3-af40efeb378e",
+			"isUnique": true,
+			"name": "lt_customer_stats_customer",
+			"columns": [
+				{
+					"id": "0b09aa1e-a49f-44e5-bf1b-986c247cc3e1",
+					"fieldName": "customer",
+					"fieldType": "smalltext",
+					"isUnique": false,
+					"isNullable": true,
+					"description": "Customer"
+				}
+			],
+			"isVector": false
+		}
+	],
+	"foreignKeys": [],
+	"vectorStoreConfig": null,
+	"name": "lt_customer_stats",
+	"description": "Per-customer aggregates maintained by the recalc job",
+	"ver": "26.10.28.1306",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"generationStrategy": null,
+	"rolesRead": [],
+	"rolesWrite": []
+}

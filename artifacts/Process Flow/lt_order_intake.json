@@ -1,0 +1,65 @@
+{
+	"id": "9eea2257-d427-405b-949e-67f253ac1b3e",
+	"createdAt": "2026-10-28T10:26:46.788Z",
+	"createdBy": "gunnar",
+	"graph": {
+		"nodes": [
+			{
+				"id": "36617714-d6f0-4be6-8c20-b8987ebb368d",
+				"type": "start",
+				"position": {
+					"x": 0,
+					"y": 4
+				},
+				"data": {
+					"label": "Start"
+				}
+			},
+			{
+				"id": "2ed163b1-e9ed-4084-9292-89f7381e7f5c",
+				"type": "runScript",
+				"position": {
+					"x": 195,
+					"y": 0
+				},
+				"data": {
+					"label": "Recalculate stats",
+					"scriptId": "748aa02d-a963-4bfe-bd14-2674f3b45535",
+					"scriptName": "lt_stats"
+				}
+			},
+			{
+				"id": "3c174fa0-b47c-436d-ac73-3b8c94957488",
+				"type": "end",
+				"position": {
+					"x": 565,
+					"y": 4
+				},
+				"data": {
+					"label": "End"
+				}
+			}
+		],
+		"edges": [
+			{
+				"id": "cf202f93-28fb-4696-bff0-38c5a286902c",
+				"source": "36617714-d6f0-4be6-8c20-b8987ebb368d",
+				"target": "2ed163b1-e9ed-4084-9292-89f7381e7f5c"
+			},
+			{
+				"id": "00878631-1a46-4a33-be1f-8a1eaa4c4137",
+				"source": "2ed163b1-e9ed-4084-9292-89f7381e7f5c",
+				"target": "3c174fa0-b47c-436d-ac73-3b8c94957488"
+			}
+		]
+	},
+	"interface": [],
+	"testdata": null,
+	"name": "lt_order_intake",
+	"ver": "26.10.28.1126",
+	"description": "Runs the stats script after an order is created",
+	"archived": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"allowPublicRun": false,
+	"roles": []
+}

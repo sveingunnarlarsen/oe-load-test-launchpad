@@ -1,0 +1,1333 @@
+{
+	"id": "2c281e59-f736-4e0a-ba5b-69bc6f1b0f74",
+	"createdAt": "2026-10-28T12:20:13.516Z",
+	"createdBy": "gunnar",
+	"objects": [
+		{
+			"fieldNo": "225c11c7-4322-4ae0-9172-eda10f623c1b",
+			"fieldName": "oApp",
+			"fieldParent": 0,
+			"fieldType": "sap.m.App",
+			"script": "",
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "cfb539e1-d26c-4093-a89a-35994a96ce2a",
+					"fieldName": "oPage",
+					"fieldParent": "225c11c7-4322-4ae0-9172-eda10f623c1b",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"script": "",
+							"translation": [],
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "LoadTest Report (N+1 showcase)"
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "60015008-a729-4e8e-be02-cef55fe7d72c",
+							"fieldName": "barHeader",
+							"fieldParent": "cfb539e1-d26c-4093-a89a-35994a96ce2a",
+							"fieldType": "sap.m.OverflowToolbar",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"script": "",
+									"translation": [],
+									"attribute": "styleClass",
+									"grouping": "Properties",
+									"value": "sapUiSmallMarginBottom"
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "115e62b1-508a-4d27-a40a-128c88cc600c",
+									"fieldName": "txtSummary",
+									"fieldParent": "60015008-a729-4e8e-be02-cef55fe7d72c",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{Report>/orders} orders · {Report>/queries} queries · script {Report>/scriptMs} ms · round trip {Report>/roundTripMs} ms"
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "a96d607b-66ee-45a4-8004-3e76c7b9f0c9",
+									"fieldName": "spacer",
+									"fieldParent": "60015008-a729-4e8e-be02-cef55fe7d72c",
+									"fieldType": "sap.m.ToolbarSpacer",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [],
+									"data": []
+								},
+								{
+									"fieldNo": "75744fb0-44c9-4f69-931a-c5d1e4a44c71",
+									"fieldName": "butReload",
+									"fieldParent": "60015008-a729-4e8e-be02-cef55fe7d72c",
+									"fieldType": "sap.m.Button",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Reload"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://refresh"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "enabled",
+											"grouping": "Properties",
+											"value": "{= !${Report>/loading} }"
+										},
+										{
+											"script": "ltLoadReport();",
+											"translation": [],
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"language": "javascript"
+										}
+									],
+									"data": []
+								}
+							]
+						},
+						{
+							"fieldNo": "c834153e-b573-44dc-ad48-b279eb10ec16",
+							"fieldName": "busy",
+							"fieldParent": "cfb539e1-d26c-4093-a89a-35994a96ce2a",
+							"fieldType": "sap.m.BusyIndicator",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"script": "",
+									"translation": [],
+									"attribute": "visible",
+									"grouping": "Properties",
+									"value": "{Report>/loading}"
+								},
+								{
+									"script": "",
+									"translation": [],
+									"attribute": "size",
+									"grouping": "Properties",
+									"value": "2rem"
+								}
+							],
+							"data": []
+						},
+						{
+							"fieldNo": "e8803dd2-a8d2-4e68-9bd8-29e0c45c345e",
+							"fieldName": "iconTabs",
+							"fieldParent": "cfb539e1-d26c-4093-a89a-35994a96ce2a",
+							"fieldType": "sap.m.IconTabBar",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"script": "",
+									"translation": [],
+									"attribute": "expandable",
+									"grouping": "Properties",
+									"value": "false"
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "9857218b-6ef2-4db4-9c63-177b763ec800",
+									"fieldName": "tabCustomers",
+									"fieldParent": "e8803dd2-a8d2-4e68-9bd8-29e0c45c345e",
+									"fieldType": "sap.m.IconTabFilter",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Customers"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "key",
+											"grouping": "Properties",
+											"value": "customers"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://customer"
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "ac0d6c84-6a10-43c0-842d-b4f5af1d9040",
+											"fieldName": "tabCust",
+											"fieldParent": "9857218b-6ef2-4db4-9c63-177b763ec800",
+											"fieldType": "sap.m.Table",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "growing",
+													"grouping": "Properties",
+													"value": "true"
+												},
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "growingThreshold",
+													"grouping": "Properties",
+													"value": "50"
+												},
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "sticky",
+													"grouping": "Properties",
+													"value": "[\"ColumnHeaders\",\"HeaderToolbar\"]"
+												}
+											],
+											"bindingType": "h",
+											"modelPath": "Customers>/",
+											"data": [
+												{
+													"fieldNo": "ed8a3af7-2bf7-4182-9db3-210a47413a3d",
+													"fieldName": "tabCustColCustomer",
+													"fieldParent": "ac0d6c84-6a10-43c0-842d-b4f5af1d9040",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "501bd73f-e80d-481f-867f-82a73159f9ae",
+															"fieldName": "tabCustColTextCustomer",
+															"fieldParent": "ed8a3af7-2bf7-4182-9db3-210a47413a3d",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Customer"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "241d9c89-4f52-4292-b466-7092a4092fac",
+													"fieldName": "tabCustColCountry",
+													"fieldParent": "ac0d6c84-6a10-43c0-842d-b4f5af1d9040",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "49cbe7f0-ef76-4941-85a3-0f2c7deb6f17",
+															"fieldName": "tabCustColTextCountry",
+															"fieldParent": "241d9c89-4f52-4292-b466-7092a4092fac",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Country"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "f5314ae9-054e-4f1e-9d23-56269e8be3cd",
+													"fieldName": "tabCustColSegment",
+													"fieldParent": "ac0d6c84-6a10-43c0-842d-b4f5af1d9040",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "5697e062-cc9d-499f-b593-4557ddfdb7bf",
+															"fieldName": "tabCustColTextSegment",
+															"fieldParent": "f5314ae9-054e-4f1e-9d23-56269e8be3cd",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Segment"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "d4e3d6d9-0266-469f-ad52-7e195fdeef3f",
+													"fieldName": "tabCustColOrders",
+													"fieldParent": "ac0d6c84-6a10-43c0-842d-b4f5af1d9040",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "0f9d141d-73e5-4de4-b469-37a7c0aa4494",
+															"fieldName": "tabCustColTextOrders",
+															"fieldParent": "d4e3d6d9-0266-469f-ad52-7e195fdeef3f",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Orders"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "f22beca2-5f9b-41a4-855b-d7839d4b4852",
+													"fieldName": "tabCustColLines",
+													"fieldParent": "ac0d6c84-6a10-43c0-842d-b4f5af1d9040",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "2da2c149-e4bb-44af-ac72-fd84b4822f70",
+															"fieldName": "tabCustColTextLines",
+															"fieldParent": "f22beca2-5f9b-41a4-855b-d7839d4b4852",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Lines"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "09ecf96e-aa63-496d-8717-914fb554f2b0",
+													"fieldName": "tabCustColAmount",
+													"fieldParent": "ac0d6c84-6a10-43c0-842d-b4f5af1d9040",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "35bd0ae4-ed38-42cd-af21-b52f00e7731e",
+															"fieldName": "tabCustColTextAmount",
+															"fieldParent": "09ecf96e-aa63-496d-8717-914fb554f2b0",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Amount"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "5129b418-84aa-455f-8b8b-a1c5e5f02669",
+													"fieldName": "tabCustRow",
+													"fieldParent": "ac0d6c84-6a10-43c0-842d-b4f5af1d9040",
+													"fieldType": "sap.m.ColumnListItem",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "79d08a81-5840-4c78-9a76-cd84738df7cf",
+															"fieldName": "tabCustCellCustomer",
+															"fieldParent": "5129b418-84aa-455f-8b8b-a1c5e5f02669",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Customers>customer}"
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "5cf8dadf-3bd6-4d08-888d-f1a511ade030",
+															"fieldName": "tabCustCellCountry",
+															"fieldParent": "5129b418-84aa-455f-8b8b-a1c5e5f02669",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Customers>country}"
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "78f20fdc-2d6e-41a1-88f6-bef2df9a1b1c",
+															"fieldName": "tabCustCellSegment",
+															"fieldParent": "5129b418-84aa-455f-8b8b-a1c5e5f02669",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Customers>segment}"
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "f6cb0ea4-4c71-4349-b3bd-6fb57894810d",
+															"fieldName": "tabCustCellOrders",
+															"fieldParent": "5129b418-84aa-455f-8b8b-a1c5e5f02669",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Customers>orders}"
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "39ec74b4-e58d-48da-9dae-61b0ea238dd0",
+															"fieldName": "tabCustCellLines",
+															"fieldParent": "5129b418-84aa-455f-8b8b-a1c5e5f02669",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Customers>lines}"
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "6da0216b-7200-421b-92f6-1c1abca890c3",
+															"fieldName": "tabCustCellAmount",
+															"fieldParent": "5129b418-84aa-455f-8b8b-a1c5e5f02669",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Customers>amount}"
+																}
+															],
+															"data": []
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "accab4fb-a91d-4e49-ab76-34fe640c102f",
+									"fieldName": "tabProducts",
+									"fieldParent": "e8803dd2-a8d2-4e68-9bd8-29e0c45c345e",
+									"fieldType": "sap.m.IconTabFilter",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Products"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "key",
+											"grouping": "Properties",
+											"value": "products"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://product"
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "e864cee4-fe63-4f30-9b91-8d16efdbcce7",
+											"fieldName": "tabProd",
+											"fieldParent": "accab4fb-a91d-4e49-ab76-34fe640c102f",
+											"fieldType": "sap.m.Table",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "growing",
+													"grouping": "Properties",
+													"value": "true"
+												},
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "growingThreshold",
+													"grouping": "Properties",
+													"value": "50"
+												},
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "sticky",
+													"grouping": "Properties",
+													"value": "[\"ColumnHeaders\",\"HeaderToolbar\"]"
+												}
+											],
+											"bindingType": "h",
+											"modelPath": "Products>/",
+											"data": [
+												{
+													"fieldNo": "4f61c043-a4e0-40ac-a0f2-3adc14b3d603",
+													"fieldName": "tabProdColProduct",
+													"fieldParent": "e864cee4-fe63-4f30-9b91-8d16efdbcce7",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "15375825-d466-4c97-a339-2cbeb3dbb855",
+															"fieldName": "tabProdColTextProduct",
+															"fieldParent": "4f61c043-a4e0-40ac-a0f2-3adc14b3d603",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Product"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "37ed2eb6-e50a-403a-8262-957c786e44f5",
+													"fieldName": "tabProdColOrders",
+													"fieldParent": "e864cee4-fe63-4f30-9b91-8d16efdbcce7",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "bc92d6f3-edcc-424f-a836-c594f06e5004",
+															"fieldName": "tabProdColTextOrders",
+															"fieldParent": "37ed2eb6-e50a-403a-8262-957c786e44f5",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Orders"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "79fa1bc0-70fa-449e-a076-67a8ce592da4",
+													"fieldName": "tabProdColQuantity",
+													"fieldParent": "e864cee4-fe63-4f30-9b91-8d16efdbcce7",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "340eb386-2d5f-4eca-8ccc-77d9a3b32931",
+															"fieldName": "tabProdColTextQuantity",
+															"fieldParent": "79fa1bc0-70fa-449e-a076-67a8ce592da4",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Quantity"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "9bdd2b56-8791-4774-b525-6e79db3643f2",
+													"fieldName": "tabProdColAmount",
+													"fieldParent": "e864cee4-fe63-4f30-9b91-8d16efdbcce7",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "12e68f8d-ee31-4b08-b9f1-2b255cc17b60",
+															"fieldName": "tabProdColTextAmount",
+															"fieldParent": "9bdd2b56-8791-4774-b525-6e79db3643f2",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Amount"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "9578ffbe-c426-4ffb-b192-d56f95ca655d",
+													"fieldName": "tabProdRow",
+													"fieldParent": "e864cee4-fe63-4f30-9b91-8d16efdbcce7",
+													"fieldType": "sap.m.ColumnListItem",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "74275934-0dc8-4ec8-bcf8-b08f73e5f6fb",
+															"fieldName": "tabProdCellProduct",
+															"fieldParent": "9578ffbe-c426-4ffb-b192-d56f95ca655d",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Products>product}"
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "12ae7019-8987-4c87-ad66-ce58a663f0bb",
+															"fieldName": "tabProdCellOrders",
+															"fieldParent": "9578ffbe-c426-4ffb-b192-d56f95ca655d",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Products>orders}"
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "fecb85d3-32c3-4e6f-b7d1-a11ff337d54e",
+															"fieldName": "tabProdCellQuantity",
+															"fieldParent": "9578ffbe-c426-4ffb-b192-d56f95ca655d",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Products>quantity}"
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "7b219dfe-86f7-413a-9e53-a232df7acb38",
+															"fieldName": "tabProdCellAmount",
+															"fieldParent": "9578ffbe-c426-4ffb-b192-d56f95ca655d",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Products>amount}"
+																}
+															],
+															"data": []
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"fieldNo": "f6a98845-d187-4a1f-bdf5-760dd82580fb",
+									"fieldName": "tabJobs",
+									"fieldParent": "e8803dd2-a8d2-4e68-9bd8-29e0c45c345e",
+									"fieldType": "sap.m.IconTabFilter",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Job runs"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "key",
+											"grouping": "Properties",
+											"value": "jobs"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://history"
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "87437386-0069-43be-9361-95e033f4f1a2",
+											"fieldName": "tabJobRuns",
+											"fieldParent": "f6a98845-d187-4a1f-bdf5-760dd82580fb",
+											"fieldType": "sap.m.Table",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "growing",
+													"grouping": "Properties",
+													"value": "true"
+												},
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "growingThreshold",
+													"grouping": "Properties",
+													"value": "50"
+												},
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "sticky",
+													"grouping": "Properties",
+													"value": "[\"ColumnHeaders\",\"HeaderToolbar\"]"
+												}
+											],
+											"bindingType": "h",
+											"modelPath": "Jobs>/",
+											"data": [
+												{
+													"fieldNo": "2c3a695f-38a9-4226-b3bf-65bf06c802a5",
+													"fieldName": "tabJobRunsColJob",
+													"fieldParent": "87437386-0069-43be-9361-95e033f4f1a2",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "ca2e7578-c1c5-4c88-8f0f-c3d5920819bf",
+															"fieldName": "tabJobRunsColTextJob",
+															"fieldParent": "2c3a695f-38a9-4226-b3bf-65bf06c802a5",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Job"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "ec967da7-0907-4b04-bde6-a81f6831cd36",
+													"fieldName": "tabJobRunsColProcessed",
+													"fieldParent": "87437386-0069-43be-9361-95e033f4f1a2",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "d51022a0-9717-4cba-b8b3-2857a0c8310f",
+															"fieldName": "tabJobRunsColTextProcessed",
+															"fieldParent": "ec967da7-0907-4b04-bde6-a81f6831cd36",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Processed"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "7ff00c9f-d480-4b9e-9978-59a2eca6fa9d",
+													"fieldName": "tabJobRunsColMs",
+													"fieldParent": "87437386-0069-43be-9361-95e033f4f1a2",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "b8059bb6-3528-4a66-b025-a234917f3c2b",
+															"fieldName": "tabJobRunsColTextMs",
+															"fieldParent": "7ff00c9f-d480-4b9e-9978-59a2eca6fa9d",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "ms"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "ab4941e9-58f3-4fb5-96bf-50260abc3bd6",
+													"fieldName": "tabJobRunsColDetails",
+													"fieldParent": "87437386-0069-43be-9361-95e033f4f1a2",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "c56ddacb-94f9-4839-8ddf-c7d4ec2a1c39",
+															"fieldName": "tabJobRunsColTextDetails",
+															"fieldParent": "ab4941e9-58f3-4fb5-96bf-50260abc3bd6",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "Details"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "6876f7f7-8068-4e39-a34c-39d16aaeea4e",
+													"fieldName": "tabJobRunsColAt",
+													"fieldParent": "87437386-0069-43be-9361-95e033f4f1a2",
+													"fieldType": "sap.m.Column",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "6e1eed40-d946-47de-b146-f79257a33601",
+															"fieldName": "tabJobRunsColTextAt",
+															"fieldParent": "6876f7f7-8068-4e39-a34c-39d16aaeea4e",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "At"
+																}
+															],
+															"data": []
+														}
+													]
+												},
+												{
+													"fieldNo": "1f458063-7481-46cb-8b13-70fce781862b",
+													"fieldName": "tabJobRunsRow",
+													"fieldParent": "87437386-0069-43be-9361-95e033f4f1a2",
+													"fieldType": "sap.m.ColumnListItem",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [],
+													"data": [
+														{
+															"fieldNo": "59960d56-c04f-4da3-bdd0-0f32cdb313d3",
+															"fieldName": "tabJobRunsCellJob",
+															"fieldParent": "1f458063-7481-46cb-8b13-70fce781862b",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Jobs>job}"
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "447a57c6-044c-4a35-8743-9fdcea579674",
+															"fieldName": "tabJobRunsCellProcessed",
+															"fieldParent": "1f458063-7481-46cb-8b13-70fce781862b",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Jobs>processed}"
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "aed6f9be-cc2b-4ad2-ae59-16de654255f7",
+															"fieldName": "tabJobRunsCellMs",
+															"fieldParent": "1f458063-7481-46cb-8b13-70fce781862b",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Jobs>durationMs}"
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "38d58cac-ba54-4381-8546-df44ec313389",
+															"fieldName": "tabJobRunsCellDetails",
+															"fieldParent": "1f458063-7481-46cb-8b13-70fce781862b",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Jobs>details}"
+																}
+															],
+															"data": []
+														},
+														{
+															"fieldNo": "0303fd6c-3ef9-4b22-b604-fecf7902718e",
+															"fieldName": "tabJobRunsCellAt",
+															"fieldParent": "1f458063-7481-46cb-8b13-70fce781862b",
+															"fieldType": "sap.m.Text",
+															"script": "",
+															"request": [],
+															"response": [],
+															"attributes": [
+																{
+																	"script": "",
+																	"translation": [],
+																	"attribute": "text",
+																	"grouping": "Properties",
+																	"value": "{Jobs>at}"
+																}
+															],
+															"data": []
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "724a070d-8d8a-4d6b-b9d8-76e966e14ef1",
+					"fieldName": "Report",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"bindingValue": "Generic Object",
+					"bindingType": "u",
+					"bindingSource": "P9",
+					"assignDefaultData": true,
+					"data": []
+				},
+				{
+					"fieldNo": "bb9d3d76-595c-4b3f-b47a-ae1c3e6aa79c",
+					"fieldName": "Customers",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"bindingValue": "Generic Array",
+					"bindingType": "h",
+					"bindingSource": "P9",
+					"assignDefaultData": true,
+					"data": []
+				},
+				{
+					"fieldNo": "e4c5c0e1-30f1-4477-9554-fe99a3f82039",
+					"fieldName": "Products",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"bindingValue": "Generic Array",
+					"bindingType": "h",
+					"bindingSource": "P9",
+					"assignDefaultData": true,
+					"data": []
+				},
+				{
+					"fieldNo": "2dd7344e-7675-4586-8323-21e22de476e3",
+					"fieldName": "Jobs",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"bindingValue": "Generic Array",
+					"bindingType": "h",
+					"bindingSource": "P9",
+					"assignDefaultData": true,
+					"data": []
+				},
+				{
+					"fieldNo": "86f72c09-c850-46e8-98f0-e4f985e31072",
+					"fieldName": "Report",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"restSource": "a22a01c4-3398-4030-8aee-08c56dec1123",
+					"restOperation": "36bc2fc1-1e92-4d9b-8998-e6516e5d6fb7",
+					"data": []
+				},
+				{
+					"fieldNo": "8749a967-b9b9-4ad0-9a64-6b48c0962c93",
+					"fieldName": "Jobs",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"restSource": "a22a01c4-3398-4030-8aee-08c56dec1123",
+					"restOperation": "54e87b35-b37d-4db8-a94b-ba257ead233a",
+					"data": []
+				},
+				{
+					"fieldNo": "3c93fc83-9504-4303-a173-42c86ab91cee",
+					"fieldName": "init",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/init.js",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"iaSettings": null,
+	"ver": "26.10.28.1320",
+	"application": "lt_report",
+	"title": "LoadTest Report",
+	"description": "Heavy N+1 report over customers, products and job runs",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": false,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_integration": false,
+	"ui5_chart": false,
+	"ui5_dxp_ui": false,
+	"ui5_theme": "",
+	"ui5_version": "",
+	"ui5_language": "",
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": "",
+	"header": "",
+	"manifest": "",
+	"globalScript": "",
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": 4,
+	"printWidth": 100,
+	"generateVersionOnActivation": false,
+	"disableIntelligence": false,
+	"activationHistoryCount": 5,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"apis": [
+		{
+			"id": "a22a01c4-3398-4030-8aee-08c56dec1123",
+			"name": "LoadTest",
+			"ver": "26.10.28.1428"
+		}
+	],
+	"i18n": []
+}

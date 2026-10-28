@@ -1,0 +1,78 @@
+{
+	"id": "1e67bf62-2407-49b9-a944-5bbcb64354ea",
+	"createdAt": "2026-10-28T12:06:23.458Z",
+	"createdBy": "gunnar",
+	"fields": [
+		{
+			"id": "f751f7d6-8b5f-4ef3-bf54-8f7fa2fbc9db",
+			"fieldName": "orderNo",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Order number"
+		},
+		{
+			"id": "ca9a026f-a3d2-43fa-a55e-c04c03226545",
+			"fieldName": "lineNo",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Line"
+		},
+		{
+			"id": "ecba38c9-85a1-482d-842a-3507d364f7ce",
+			"fieldName": "product",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Product"
+		},
+		{
+			"id": "cd1f6a88-e2c4-4b7d-8fc9-d205b6e1be38",
+			"fieldName": "quantity",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Quantity"
+		},
+		{
+			"id": "53c76961-2366-4282-8c61-dffff2dbdd1b",
+			"fieldName": "price",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Price",
+			"precision": 12,
+			"scale": 2
+		}
+	],
+	"indices": [
+		{
+			"id": "1ba27a7d-98f1-4642-93c3-adeb43179f16",
+			"isUnique": false,
+			"name": "lt_order_line_orderno",
+			"columns": [
+				{
+					"id": "f751f7d6-8b5f-4ef3-bf54-8f7fa2fbc9db",
+					"fieldName": "orderNo",
+					"fieldType": "smalltext",
+					"isUnique": false,
+					"isNullable": true,
+					"description": "Order number"
+				}
+			],
+			"isVector": false
+		}
+	],
+	"foreignKeys": [],
+	"vectorStoreConfig": null,
+	"name": "lt_order_line",
+	"description": "Load test order lines",
+	"ver": "26.10.28.1306",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"generationStrategy": null,
+	"rolesRead": [],
+	"rolesWrite": []
+}

@@ -1,0 +1,71 @@
+{
+	"id": "9c4ef92a-4e2e-4cc1-85d1-27bd93bfc85d",
+	"createdAt": "2026-10-28T13:28:44.292Z",
+	"createdBy": "gunnar",
+	"globalScripts": [],
+	"externalModules": [],
+	"entitySets": [
+		{
+			"id": "8c73e775-8b05-49a9-87e9-cb8b7f1443c3",
+			"name": "lt_customer",
+			"contextname": "lt_customer"
+		},
+		{
+			"id": "f7bccebf-4853-42eb-adab-3f5e5fb74d3e",
+			"name": "lt_order",
+			"contextname": "lt_order"
+		},
+		{
+			"id": "1e67bf62-2407-49b9-a944-5bbcb64354ea",
+			"name": "lt_order_line",
+			"contextname": "lt_order_line"
+		},
+		{
+			"id": "ed670144-eb86-41ac-ac35-7d742b2b28ce",
+			"name": "lt_metric",
+			"contextname": "lt_metric"
+		},
+		{
+			"id": "80bb67b0-25fb-40c2-8839-9d8ac6424a7d",
+			"name": "lt_order_archive",
+			"contextname": "lt_order_archive"
+		},
+		{
+			"id": "3d8c9036-fa22-4f1a-93d5-30fb44828bdd",
+			"name": "lt_customer_stats",
+			"contextname": "lt_customer_stats"
+		},
+		{
+			"id": "037b4285-4f23-4d4f-b122-4bb68f0f4a3c",
+			"name": "lt_job_run",
+			"contextname": "lt_job_run"
+		}
+	],
+	"agents": [],
+	"processFlows": [],
+	"apis": [
+		{
+			"id": "0788a9ed-fec5-444c-9a55-a7361fa3054f",
+			"name": "GET /db-wait",
+			"contextname": "db-wait_get",
+			"parent": "a22a01c4-3398-4030-8aee-08c56dec1123",
+			"method": "GET"
+		}
+	],
+	"name": "lt_db_wait",
+	"ver": "26.10.28.1428",
+	"description": "LoadTest: lt_db_wait",
+	"folder": null,
+	"content": "file:///content.js",
+	"useAsGlobalScript": false,
+	"lastRunSuccessful": false,
+	"isTypescript": false,
+	"language": "javascript",
+	"jsscriptGroup": "4a866290-0ed5-4270-b4b2-af3e5f5da945",
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"jsscriptGroupObj": {
+		"id": "4a866290-0ed5-4270-b4b2-af3e5f5da945",
+		"name": "LoadTest API",
+		"ver": "26.10.28.1428"
+	}
+}

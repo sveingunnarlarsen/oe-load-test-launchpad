@@ -1,0 +1,165 @@
+{
+	"id": "9ab5cd97-6fe2-40f8-a644-d29183ca94cd",
+	"createdAt": "2026-10-28T12:27:43.580Z",
+	"createdBy": "gunnar",
+	"settings": {
+		"properties": {
+			"report": {
+				"title": "Job runs",
+				"subTitle": "Written by the scheduled LoadTest jobs",
+				"autoRun": true,
+				"autoRunFocus": true,
+				"enableRun": true,
+				"enableCreate": false,
+				"enableDelete": false,
+				"enableExport": true,
+				"enableMultiSelect": false,
+				"enableVariant": false,
+				"hideHeader": false,
+				"iconButtonExport": "sap-icon://excel-attachment",
+				"typeButtonExport": "Transparent",
+				"searchLabel": "Search",
+				"searchPlaceholder": ""
+			},
+			"form": {},
+			"table": {}
+		},
+		"fieldCatalog": [
+			{
+				"name": "job",
+				"label": "Job",
+				"type": "smalltext",
+				"usage": "BOTH"
+			},
+			{
+				"name": "processed",
+				"label": "Processed",
+				"type": "integer",
+				"usage": "BOTH"
+			},
+			{
+				"name": "durationMs",
+				"label": "Duration ms",
+				"type": "integer",
+				"usage": "BOTH"
+			},
+			{
+				"name": "details",
+				"label": "Details",
+				"type": "mediumtext",
+				"usage": "BOTH"
+			},
+			{
+				"name": "createdAt",
+				"label": "Created At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			},
+			{
+				"name": "updatedAt",
+				"label": "Updated At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [
+			{
+				"name": "job",
+				"text": "Job",
+				"visible": true,
+				"fieldPos": 1
+			}
+		],
+		"fieldsRun": [
+			{
+				"name": "job",
+				"text": "Job",
+				"fieldPos": 1,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "processed",
+				"text": "Processed",
+				"fieldPos": 2,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "durationMs",
+				"text": "ms",
+				"fieldPos": 3,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "details",
+				"text": "Details",
+				"fieldPos": 4,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "createdAt",
+				"text": "At",
+				"fieldPos": 5,
+				"visible": true,
+				"enableFilter": false,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block",
+				"formatter": "date00",
+				"width": "200px"
+			}
+		],
+		"defaultVariant": {
+			"id": "83446dbc-8454-4eb8-9843-6d14d3d163ea",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		},
+		"translation": {
+			"EN": {
+				"report": {},
+				"form": {},
+				"table": {},
+				"fieldCatalog": {}
+			}
+		},
+		"table": "lt_job_run"
+	},
+	"name": "lt_job_runs_list",
+	"description": "Job runs",
+	"group": "LoadTest",
+	"type": "C",
+	"connectorid": "1114aec0-368c-43a6-90e4-9a764e62d1a5",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "26.10.28.1327",
+	"disabled": false,
+	"appType": "A",
+	"application": "neptunedxp_adaptive_list",
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null,
+	"i18n": []
+}

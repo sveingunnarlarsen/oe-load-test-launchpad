@@ -1,0 +1,51 @@
+{
+	"id": "8c73e775-8b05-49a9-87e9-cb8b7f1443c3",
+	"createdAt": "2026-10-28T10:24:02.158Z",
+	"createdBy": "gunnar",
+	"fields": [
+		{
+			"id": "99159a7f-4460-4f47-bbcd-f528a94df89d",
+			"fieldName": "name",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Name"
+		},
+		{
+			"id": "f3d00d5f-e105-41e4-a7eb-6a53c1362977",
+			"fieldName": "email",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Email"
+		},
+		{
+			"id": "62ccbc7f-0792-4210-8525-44565e4831db",
+			"fieldName": "country",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Country"
+		},
+		{
+			"id": "752e7128-bc7a-47dc-bef2-384eadfd3bd5",
+			"fieldName": "segment",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Segment"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"vectorStoreConfig": null,
+	"name": "lt_customer",
+	"description": "Load test customers",
+	"ver": "26.10.28.1124",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"generationStrategy": null,
+	"rolesRead": [],
+	"rolesWrite": []
+}

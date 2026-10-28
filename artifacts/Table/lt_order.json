@@ -1,0 +1,94 @@
+{
+	"id": "f7bccebf-4853-42eb-adab-3f5e5fb74d3e",
+	"createdAt": "2026-10-28T10:24:28.815Z",
+	"createdBy": "gunnar",
+	"fields": [
+		{
+			"id": "f0549d45-12e8-429c-84d0-4e751e533358",
+			"fieldName": "orderNo",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Order number"
+		},
+		{
+			"id": "50965697-751a-4a3b-bdef-1613242bbb35",
+			"fieldName": "customer",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Customer"
+		},
+		{
+			"id": "dc1c2b46-09cc-4089-870f-89b0f35cb0e2",
+			"fieldName": "product",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Product"
+		},
+		{
+			"id": "990155ad-ea2a-419d-94c1-50f2953e6d14",
+			"fieldName": "quantity",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Quantity"
+		},
+		{
+			"id": "ec9f22cd-0b92-473f-902c-41e89f8c125a",
+			"fieldName": "amount",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Amount",
+			"precision": 12,
+			"scale": 2
+		},
+		{
+			"id": "32a544a5-4ff1-4151-92a5-58fd75a5206c",
+			"fieldName": "status",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Status"
+		},
+		{
+			"id": "9024b8d0-24dc-4eaa-9e3b-cff7ed0e3881",
+			"fieldName": "notes",
+			"fieldType": "mediumtext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Notes"
+		}
+	],
+	"indices": [
+		{
+			"id": "ab10f605-2645-4bd1-aa2f-17bb25af7a31",
+			"isUnique": false,
+			"name": "lt_order_status",
+			"columns": [
+				{
+					"id": "32a544a5-4ff1-4151-92a5-58fd75a5206c",
+					"fieldName": "status",
+					"fieldType": "smalltext",
+					"isUnique": false,
+					"isNullable": true,
+					"description": "Status"
+				}
+			],
+			"isVector": false
+		}
+	],
+	"foreignKeys": [],
+	"vectorStoreConfig": null,
+	"name": "lt_order",
+	"description": "Load test orders",
+	"ver": "26.10.28.1124",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"generationStrategy": null,
+	"rolesRead": [],
+	"rolesWrite": []
+}

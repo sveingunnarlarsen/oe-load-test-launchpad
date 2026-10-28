@@ -1,0 +1,1910 @@
+{
+	"id": "e2c18add-ac05-4ddb-a719-254845e0ae1e",
+	"createdAt": "2026-10-28T12:20:13.347Z",
+	"createdBy": "gunnar",
+	"objects": [
+		{
+			"fieldNo": "31975179-08a9-4af9-91c1-c0bd5b9540bb",
+			"fieldName": "oApp",
+			"fieldParent": 0,
+			"fieldType": "sap.m.App",
+			"script": "",
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "5d69ddde-8288-4e30-9dd3-d2610cd764ff",
+					"fieldName": "oPage",
+					"fieldParent": "31975179-08a9-4af9-91c1-c0bd5b9540bb",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"script": "",
+							"translation": [],
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "LoadTest Stress"
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "31125f77-7ca4-4f0d-b1fc-616550f7d0f6",
+							"fieldName": "panelStress",
+							"fieldParent": "5d69ddde-8288-4e30-9dd3-d2610cd764ff",
+							"fieldType": "sap.m.Panel",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"script": "",
+									"translation": [],
+									"attribute": "headerText",
+									"grouping": "Properties",
+									"value": "Server-side stress (one request, many DB operations)"
+								},
+								{
+									"script": "",
+									"translation": [],
+									"attribute": "expandable",
+									"grouping": "Properties",
+									"value": "false"
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "d5985b57-7350-40d5-9028-28a4c721fde8",
+									"fieldName": "formStress",
+									"fieldParent": "31125f77-7ca4-4f0d-b1fc-616550f7d0f6",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "editable",
+											"grouping": "Properties",
+											"value": "true"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "layout",
+											"grouping": "Properties",
+											"value": "ResponsiveGridLayout"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "columnsL",
+											"grouping": "Properties",
+											"value": "2"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "columnsM",
+											"grouping": "Properties",
+											"value": "2"
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "8de2d4a9-934f-4469-9193-944189b1620b",
+											"fieldName": "lblLabel",
+											"fieldParent": "d5985b57-7350-40d5-9028-28a4c721fde8",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Run label (branch)"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "d42f6633-ebf9-4a19-b49e-6f7a7d63ec51",
+											"fieldName": "inpLabel",
+											"fieldParent": "d5985b57-7350-40d5-9028-28a4c721fde8",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{Run>/label}"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "06fa7695-d945-4119-8086-ae315f7b3264",
+											"fieldName": "lblCreates",
+											"fieldParent": "d5985b57-7350-40d5-9028-28a4c721fde8",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Creates"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "3fdea84b-0217-4987-b1ea-3e954cf594d3",
+											"fieldName": "inpCreates",
+											"fieldParent": "d5985b57-7350-40d5-9028-28a4c721fde8",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{Run>/creates}"
+												},
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Number"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "ac09fce5-43d7-4f5f-b90b-0c7652b4759b",
+											"fieldName": "lblReads",
+											"fieldParent": "d5985b57-7350-40d5-9028-28a4c721fde8",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Reads"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "40f97bca-bd8f-4be5-a8ab-8f272f14a4e8",
+											"fieldName": "inpReads",
+											"fieldParent": "d5985b57-7350-40d5-9028-28a4c721fde8",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{Run>/reads}"
+												},
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Number"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "f72a2acb-ac60-4cd4-9af3-eeb01bff99b3",
+											"fieldName": "lblUpdates",
+											"fieldParent": "d5985b57-7350-40d5-9028-28a4c721fde8",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Updates"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "dd30f049-049a-4911-9fd5-96eab38c8dee",
+											"fieldName": "inpUpdates",
+											"fieldParent": "d5985b57-7350-40d5-9028-28a4c721fde8",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{Run>/updates}"
+												},
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Number"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "eeea220b-1ae9-4a92-8ade-ce27f74fbaf3",
+											"fieldName": "lblDeletes",
+											"fieldParent": "d5985b57-7350-40d5-9028-28a4c721fde8",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Deletes"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "724b58de-2572-4dfc-9504-c29fec66a85d",
+											"fieldName": "inpDeletes",
+											"fieldParent": "d5985b57-7350-40d5-9028-28a4c721fde8",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{Run>/deletes}"
+												},
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Number"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "251aa3f7-6629-486d-aed2-82f7e89a71f4",
+											"fieldName": "lblResult",
+											"fieldParent": "d5985b57-7350-40d5-9028-28a4c721fde8",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Last run"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "d49037e2-f321-42c3-a592-79959b705ad0",
+											"fieldName": "txtResult",
+											"fieldParent": "d5985b57-7350-40d5-9028-28a4c721fde8",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{Run>/lastRunId} · script {Run>/scriptMs} ms · round trip {Run>/roundTripMs} ms"
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "25efb8b4-3d85-439c-b916-24acf8059981",
+									"fieldName": "butStress",
+									"fieldParent": "31125f77-7ca4-4f0d-b1fc-616550f7d0f6",
+									"fieldType": "sap.m.Button",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Run server stress"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Emphasized"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://physical-activity"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "enabled",
+											"grouping": "Properties",
+											"value": "{= !${Run>/running} }"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "styleClass",
+											"grouping": "Properties",
+											"value": "sapUiSmallMarginBeginEnd sapUiSmallMarginBottom"
+										},
+										{
+											"script": "ltRunStress();",
+											"translation": [],
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"language": "javascript"
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "b7ddce9a-550a-4f7a-a231-761a801dcbcc",
+									"fieldName": "tabOps",
+									"fieldParent": "31125f77-7ca4-4f0d-b1fc-616550f7d0f6",
+									"fieldType": "sap.m.Table",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "growing",
+											"grouping": "Properties",
+											"value": "true"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "growingThreshold",
+											"grouping": "Properties",
+											"value": "50"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "sticky",
+											"grouping": "Properties",
+											"value": "[\"ColumnHeaders\",\"HeaderToolbar\"]"
+										}
+									],
+									"bindingType": "h",
+									"modelPath": "Ops>/",
+									"data": [
+										{
+											"fieldNo": "b5b3a7b3-c5e3-4565-876b-5f1807d89df0",
+											"fieldName": "tabOpsColOp",
+											"fieldParent": "b7ddce9a-550a-4f7a-a231-761a801dcbcc",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "e029def7-3b93-448c-a8d5-f3af48e7269e",
+													"fieldName": "tabOpsColTextOp",
+													"fieldParent": "b5b3a7b3-c5e3-4565-876b-5f1807d89df0",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Operation"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "637b532b-1f3a-4f59-9259-dd01ece99694",
+											"fieldName": "tabOpsColCount",
+											"fieldParent": "b7ddce9a-550a-4f7a-a231-761a801dcbcc",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "da0b5314-a699-4fdd-9274-94572b2805d5",
+													"fieldName": "tabOpsColTextCount",
+													"fieldParent": "637b532b-1f3a-4f59-9259-dd01ece99694",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "n"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "f6adb09b-d9a0-4db9-bfa5-a6b72aa58085",
+											"fieldName": "tabOpsColAvg",
+											"fieldParent": "b7ddce9a-550a-4f7a-a231-761a801dcbcc",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "b1fe7cc4-25f3-4cf7-8abb-833eabd683a0",
+													"fieldName": "tabOpsColTextAvg",
+													"fieldParent": "f6adb09b-d9a0-4db9-bfa5-a6b72aa58085",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "avg ms"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "5abaeb8d-619a-44af-9b8b-298af79c2f30",
+											"fieldName": "tabOpsColP50",
+											"fieldParent": "b7ddce9a-550a-4f7a-a231-761a801dcbcc",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "82cbbf55-f8ea-4f36-ae8c-7525ddf3fef6",
+													"fieldName": "tabOpsColTextP50",
+													"fieldParent": "5abaeb8d-619a-44af-9b8b-298af79c2f30",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "p50 ms"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "5ecb2898-011a-4288-86e6-bd3e1e89cf3c",
+											"fieldName": "tabOpsColP95",
+											"fieldParent": "b7ddce9a-550a-4f7a-a231-761a801dcbcc",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "817f13e4-72a9-4ca5-acc9-d9d082cc8334",
+													"fieldName": "tabOpsColTextP95",
+													"fieldParent": "5ecb2898-011a-4288-86e6-bd3e1e89cf3c",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "p95 ms"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "e15da21c-994b-4758-9daf-5090a41a62ba",
+											"fieldName": "tabOpsColMax",
+											"fieldParent": "b7ddce9a-550a-4f7a-a231-761a801dcbcc",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "21a8b5aa-ac57-4063-b1cc-f3d9f04c97ea",
+													"fieldName": "tabOpsColTextMax",
+													"fieldParent": "e15da21c-994b-4758-9daf-5090a41a62ba",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "max ms"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "fe4bcd3a-0e81-4528-a196-18f20c15ebbd",
+											"fieldName": "tabOpsRow",
+											"fieldParent": "b7ddce9a-550a-4f7a-a231-761a801dcbcc",
+											"fieldType": "sap.m.ColumnListItem",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "a5660e81-7286-43ce-861a-90552ea01c1e",
+													"fieldName": "tabOpsCellOp",
+													"fieldParent": "fe4bcd3a-0e81-4528-a196-18f20c15ebbd",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{Ops>op}"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "7392377b-cebf-4551-8ebc-2e004ae993ba",
+													"fieldName": "tabOpsCellCount",
+													"fieldParent": "fe4bcd3a-0e81-4528-a196-18f20c15ebbd",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{Ops>count}"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "99deb217-3707-40cd-a7ce-38dc31fdef73",
+													"fieldName": "tabOpsCellAvg",
+													"fieldParent": "fe4bcd3a-0e81-4528-a196-18f20c15ebbd",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{Ops>avg}"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "13548e17-0d55-488e-9195-cc2d1dc0b99e",
+													"fieldName": "tabOpsCellP50",
+													"fieldParent": "fe4bcd3a-0e81-4528-a196-18f20c15ebbd",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{Ops>p50}"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "a29fde79-9b06-4389-b5f3-a4684b8120bb",
+													"fieldName": "tabOpsCellP95",
+													"fieldParent": "fe4bcd3a-0e81-4528-a196-18f20c15ebbd",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{Ops>p95}"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "43d17432-243e-4a59-a767-ae1f29eef8ab",
+													"fieldName": "tabOpsCellMax",
+													"fieldParent": "fe4bcd3a-0e81-4528-a196-18f20c15ebbd",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{Ops>max}"
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								}
+							]
+						},
+						{
+							"fieldNo": "b5d858cd-5108-4cd2-88b4-7cf7590ded3d",
+							"fieldName": "panelBurst",
+							"fieldParent": "5d69ddde-8288-4e30-9dd3-d2610cd764ff",
+							"fieldType": "sap.m.Panel",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"script": "",
+									"translation": [],
+									"attribute": "headerText",
+									"grouping": "Properties",
+									"value": "Client-side burst (many parallel requests from this app)"
+								},
+								{
+									"script": "",
+									"translation": [],
+									"attribute": "expandable",
+									"grouping": "Properties",
+									"value": "false"
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "85f6f557-78f8-45dc-9c15-f379c7b9481d",
+									"fieldName": "formBurst",
+									"fieldParent": "b5d858cd-5108-4cd2-88b4-7cf7590ded3d",
+									"fieldType": "sap.ui.layout.form.SimpleForm",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "editable",
+											"grouping": "Properties",
+											"value": "true"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "layout",
+											"grouping": "Properties",
+											"value": "ResponsiveGridLayout"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "columnsL",
+											"grouping": "Properties",
+											"value": "2"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "columnsM",
+											"grouping": "Properties",
+											"value": "2"
+										}
+									],
+									"data": [
+										{
+											"fieldNo": "ed71f097-9680-4281-94ab-4c72f3da4bf9",
+											"fieldName": "lblEndpoint",
+											"fieldParent": "85f6f557-78f8-45dc-9c15-f379c7b9481d",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Endpoint"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "0602fea2-9516-4320-acbd-4568cc34055d",
+											"fieldName": "selEndpoint",
+											"fieldParent": "85f6f557-78f8-45dc-9c15-f379c7b9481d",
+											"fieldType": "sap.m.Select",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "selectedKey",
+													"grouping": "Properties",
+													"value": "{Burst>/endpoint}"
+												}
+											],
+											"data": [
+												{
+													"fieldNo": "6f627880-2e0e-40bb-a3fe-faa3801d1910",
+													"fieldName": "itemorders",
+													"fieldParent": "0602fea2-9516-4320-acbd-4568cc34055d",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "orders"
+														},
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "GET /orders"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "cba88997-0048-46ef-8b5e-73fb1f48e108",
+													"fieldName": "itemsearch",
+													"fieldParent": "0602fea2-9516-4320-acbd-4568cc34055d",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "search"
+														},
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "GET /search"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "0fcb9824-7f5d-4c8e-8948-03defe1c6a20",
+													"fieldName": "itemstats",
+													"fieldParent": "0602fea2-9516-4320-acbd-4568cc34055d",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "stats"
+														},
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "GET /stats"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "dcbef88f-b310-4fd7-9c16-2e7e58da7fcb",
+													"fieldName": "itemreport",
+													"fieldParent": "0602fea2-9516-4320-acbd-4568cc34055d",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "report"
+														},
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "GET /report (heavy)"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "ecc3d31b-f34d-4fae-831d-75540f77770b",
+													"fieldName": "itemcreate",
+													"fieldParent": "0602fea2-9516-4320-acbd-4568cc34055d",
+													"fieldType": "sap.ui.core.Item",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "key",
+															"grouping": "Properties",
+															"value": "create"
+														},
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "POST /orders"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "d33f2d8a-bcfa-4527-b7b2-4db3234143c0",
+											"fieldName": "lblBurstCount",
+											"fieldParent": "85f6f557-78f8-45dc-9c15-f379c7b9481d",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Requests"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "fd73c3d5-24c7-4676-a45a-d42f1a82b65e",
+											"fieldName": "inpBurstCount",
+											"fieldParent": "85f6f557-78f8-45dc-9c15-f379c7b9481d",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{Burst>/count}"
+												},
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Number"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "c08a9840-03bd-401e-917f-853a8a2be801",
+											"fieldName": "lblBurstParallel",
+											"fieldParent": "85f6f557-78f8-45dc-9c15-f379c7b9481d",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Parallel"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "166fb0bb-d0a7-4a97-a115-9805210c74ff",
+											"fieldName": "inpBurstParallel",
+											"fieldParent": "85f6f557-78f8-45dc-9c15-f379c7b9481d",
+											"fieldType": "sap.m.Input",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "value",
+													"grouping": "Properties",
+													"value": "{Burst>/parallel}"
+												},
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "type",
+													"grouping": "Properties",
+													"value": "Number"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "2a78ba44-3e95-46d6-94cd-e24dbd99f2eb",
+											"fieldName": "lblDone",
+											"fieldParent": "85f6f557-78f8-45dc-9c15-f379c7b9481d",
+											"fieldType": "sap.m.Label",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "Completed"
+												}
+											],
+											"data": []
+										},
+										{
+											"fieldNo": "4405326a-b2ca-4f49-a004-1d68ba369a19",
+											"fieldName": "txtDone",
+											"fieldParent": "85f6f557-78f8-45dc-9c15-f379c7b9481d",
+											"fieldType": "sap.m.Text",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [
+												{
+													"script": "",
+													"translation": [],
+													"attribute": "text",
+													"grouping": "Properties",
+													"value": "{Burst>/done} / {Burst>/count}"
+												}
+											],
+											"data": []
+										}
+									]
+								},
+								{
+									"fieldNo": "653a10da-6724-4420-b0d0-eda7d6d6a18b",
+									"fieldName": "butBurst",
+									"fieldParent": "b5d858cd-5108-4cd2-88b4-7cf7590ded3d",
+									"fieldType": "sap.m.Button",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Run burst"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Emphasized"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "icon",
+											"grouping": "Properties",
+											"value": "sap-icon://multiselect-all"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "enabled",
+											"grouping": "Properties",
+											"value": "{= !${Burst>/running} }"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "styleClass",
+											"grouping": "Properties",
+											"value": "sapUiSmallMarginBeginEnd sapUiSmallMarginBottom"
+										},
+										{
+											"script": "ltRunBurst();",
+											"translation": [],
+											"attribute": "press",
+											"grouping": "Events",
+											"value": "Anonymous Function",
+											"language": "javascript"
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "c776eb2f-121a-40ff-b2de-caaa841e8b32",
+									"fieldName": "tabBurst",
+									"fieldParent": "b5d858cd-5108-4cd2-88b4-7cf7590ded3d",
+									"fieldType": "sap.m.Table",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "growing",
+											"grouping": "Properties",
+											"value": "true"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "growingThreshold",
+											"grouping": "Properties",
+											"value": "50"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "sticky",
+											"grouping": "Properties",
+											"value": "[\"ColumnHeaders\",\"HeaderToolbar\"]"
+										}
+									],
+									"bindingType": "h",
+									"modelPath": "BurstRows>/",
+									"data": [
+										{
+											"fieldNo": "f47cd664-8ea1-4f12-bb8b-39214c0ca7e7",
+											"fieldName": "tabBurstColRun",
+											"fieldParent": "c776eb2f-121a-40ff-b2de-caaa841e8b32",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "85900827-6ed9-4ac4-8fcf-44c79987f5a1",
+													"fieldName": "tabBurstColTextRun",
+													"fieldParent": "f47cd664-8ea1-4f12-bb8b-39214c0ca7e7",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Run"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "4f6e152a-b4cf-483e-9494-79d93b00e018",
+											"fieldName": "tabBurstColEndpoint",
+											"fieldParent": "c776eb2f-121a-40ff-b2de-caaa841e8b32",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "4d757d61-6c17-47e2-b793-6989552f0565",
+													"fieldName": "tabBurstColTextEndpoint",
+													"fieldParent": "4f6e152a-b4cf-483e-9494-79d93b00e018",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "Endpoint"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "6a411683-2759-434f-8d40-0da7fbb98af6",
+											"fieldName": "tabBurstColCount",
+											"fieldParent": "c776eb2f-121a-40ff-b2de-caaa841e8b32",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "c0a145d7-3dab-4ae1-b0d3-1edaf406060d",
+													"fieldName": "tabBurstColTextCount",
+													"fieldParent": "6a411683-2759-434f-8d40-0da7fbb98af6",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "n"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "df3ceb71-96ff-4426-91e8-55dc86326823",
+											"fieldName": "tabBurstColParallel",
+											"fieldParent": "c776eb2f-121a-40ff-b2de-caaa841e8b32",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "bddbf0b9-4fb4-478b-a9cf-bbe3242a8c2b",
+													"fieldName": "tabBurstColTextParallel",
+													"fieldParent": "df3ceb71-96ff-4426-91e8-55dc86326823",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "parallel"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "a81ce1bc-ea2e-489f-8915-1c79b56e1f10",
+											"fieldName": "tabBurstColRps",
+											"fieldParent": "c776eb2f-121a-40ff-b2de-caaa841e8b32",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "3e7d40ba-7080-4dc4-987b-a3e9f1cc52ba",
+													"fieldName": "tabBurstColTextRps",
+													"fieldParent": "a81ce1bc-ea2e-489f-8915-1c79b56e1f10",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "req/s"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "5576a645-225f-4ebb-bc1a-979a3c7e1542",
+											"fieldName": "tabBurstColAvg",
+											"fieldParent": "c776eb2f-121a-40ff-b2de-caaa841e8b32",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "78839baf-2218-45c6-b48f-743df9844eeb",
+													"fieldName": "tabBurstColTextAvg",
+													"fieldParent": "5576a645-225f-4ebb-bc1a-979a3c7e1542",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "avg ms"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "e2ca86e4-71c7-4fd5-98af-0594e7fc10c5",
+											"fieldName": "tabBurstColP95",
+											"fieldParent": "c776eb2f-121a-40ff-b2de-caaa841e8b32",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "af3e9b6e-3cb7-4aa2-96bc-3f166e4123bc",
+													"fieldName": "tabBurstColTextP95",
+													"fieldParent": "e2ca86e4-71c7-4fd5-98af-0594e7fc10c5",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "p95 ms"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "647bbe71-9f31-4acf-9f31-9a8fbfa61a36",
+											"fieldName": "tabBurstColMax",
+											"fieldParent": "c776eb2f-121a-40ff-b2de-caaa841e8b32",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "a0f986cf-da6d-4e36-8bd8-210981214ad4",
+													"fieldName": "tabBurstColTextMax",
+													"fieldParent": "647bbe71-9f31-4acf-9f31-9a8fbfa61a36",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "max ms"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "24ad1595-ee33-4126-b84b-7d8c4eae1b60",
+											"fieldName": "tabBurstColErrors",
+											"fieldParent": "c776eb2f-121a-40ff-b2de-caaa841e8b32",
+											"fieldType": "sap.m.Column",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "ab95cc63-7188-47a6-8d47-13df1c93a109",
+													"fieldName": "tabBurstColTextErrors",
+													"fieldParent": "24ad1595-ee33-4126-b84b-7d8c4eae1b60",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "errors"
+														}
+													],
+													"data": []
+												}
+											]
+										},
+										{
+											"fieldNo": "897c4fb7-6982-4112-8758-196ea8040810",
+											"fieldName": "tabBurstRow",
+											"fieldParent": "c776eb2f-121a-40ff-b2de-caaa841e8b32",
+											"fieldType": "sap.m.ColumnListItem",
+											"script": "",
+											"request": [],
+											"response": [],
+											"attributes": [],
+											"data": [
+												{
+													"fieldNo": "ea6e94da-cd57-4502-9736-fd276f8f13cf",
+													"fieldName": "tabBurstCellRun",
+													"fieldParent": "897c4fb7-6982-4112-8758-196ea8040810",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{BurstRows>runId}"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "2aa0c055-32bb-44e3-9293-05eb11e5f4b1",
+													"fieldName": "tabBurstCellEndpoint",
+													"fieldParent": "897c4fb7-6982-4112-8758-196ea8040810",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{BurstRows>endpoint}"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "87ea1ed2-c658-4103-8d75-8b84dc4718b8",
+													"fieldName": "tabBurstCellCount",
+													"fieldParent": "897c4fb7-6982-4112-8758-196ea8040810",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{BurstRows>count}"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "7a5f953f-3888-49b9-8389-5ebdb4a04a42",
+													"fieldName": "tabBurstCellParallel",
+													"fieldParent": "897c4fb7-6982-4112-8758-196ea8040810",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{BurstRows>parallel}"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "cabda95e-08fe-49e8-abac-674334253914",
+													"fieldName": "tabBurstCellRps",
+													"fieldParent": "897c4fb7-6982-4112-8758-196ea8040810",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{BurstRows>rps}"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "7af49553-87c6-4862-9868-7414c8aa38bf",
+													"fieldName": "tabBurstCellAvg",
+													"fieldParent": "897c4fb7-6982-4112-8758-196ea8040810",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{BurstRows>avg}"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "88179cf2-7820-4682-8b3a-ed47872cdf36",
+													"fieldName": "tabBurstCellP95",
+													"fieldParent": "897c4fb7-6982-4112-8758-196ea8040810",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{BurstRows>p95}"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "40acdec1-01d4-443c-baba-42373db04b56",
+													"fieldName": "tabBurstCellMax",
+													"fieldParent": "897c4fb7-6982-4112-8758-196ea8040810",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{BurstRows>max}"
+														}
+													],
+													"data": []
+												},
+												{
+													"fieldNo": "9b98e351-8461-49a2-b509-49c4394748a9",
+													"fieldName": "tabBurstCellErrors",
+													"fieldParent": "897c4fb7-6982-4112-8758-196ea8040810",
+													"fieldType": "sap.m.Text",
+													"script": "",
+													"request": [],
+													"response": [],
+													"attributes": [
+														{
+															"script": "",
+															"translation": [],
+															"attribute": "text",
+															"grouping": "Properties",
+															"value": "{BurstRows>errors}"
+														}
+													],
+													"data": []
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "12d5a71a-ba4d-4b38-a5dd-0195a8674b93",
+					"fieldName": "Run",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"bindingValue": "Generic Object",
+					"bindingType": "u",
+					"bindingSource": "P9",
+					"assignDefaultData": true,
+					"data": []
+				},
+				{
+					"fieldNo": "357251e8-05e0-45e0-aa88-cca4ed2e96be",
+					"fieldName": "Ops",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"bindingValue": "Generic Array",
+					"bindingType": "h",
+					"bindingSource": "P9",
+					"assignDefaultData": true,
+					"data": []
+				},
+				{
+					"fieldNo": "bafcbdc0-229f-4d42-a167-2422fa7c1fdd",
+					"fieldName": "Burst",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"bindingValue": "Generic Object",
+					"bindingType": "u",
+					"bindingSource": "P9",
+					"assignDefaultData": true,
+					"data": []
+				},
+				{
+					"fieldNo": "29ef6673-b63e-47d3-b6a9-08fd8827a0d8",
+					"fieldName": "BurstRows",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"bindingValue": "Generic Array",
+					"bindingType": "h",
+					"bindingSource": "P9",
+					"assignDefaultData": true,
+					"data": []
+				},
+				{
+					"fieldNo": "8b31c108-cb25-4067-bd0f-9da6b5f08d3a",
+					"fieldName": "Stress",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"restSource": "a22a01c4-3398-4030-8aee-08c56dec1123",
+					"restOperation": "9deb5b78-9b3a-431e-86db-ab313335715e",
+					"data": []
+				},
+				{
+					"fieldNo": "163d1812-515d-4f69-b68a-2c8505a80db1",
+					"fieldName": "Orders",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"restSource": "a22a01c4-3398-4030-8aee-08c56dec1123",
+					"restOperation": "5d5eaaba-8739-4b0f-afd3-5ca2cb781833",
+					"data": []
+				},
+				{
+					"fieldNo": "615c880b-f26c-4ba2-bd81-8e586876d63c",
+					"fieldName": "Search",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"restSource": "a22a01c4-3398-4030-8aee-08c56dec1123",
+					"restOperation": "9497590a-24c7-4d36-80ae-b049637fa80a",
+					"data": []
+				},
+				{
+					"fieldNo": "03dcc3ba-10fd-4ffa-9a43-399cecb5334f",
+					"fieldName": "Stats",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"restSource": "a22a01c4-3398-4030-8aee-08c56dec1123",
+					"restOperation": "218917d7-3011-416e-b595-b51bfcc30308",
+					"data": []
+				},
+				{
+					"fieldNo": "20676bac-85cd-4894-8efd-fc8e8c9017b8",
+					"fieldName": "Report",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"restSource": "a22a01c4-3398-4030-8aee-08c56dec1123",
+					"restOperation": "36bc2fc1-1e92-4d9b-8998-e6516e5d6fb7",
+					"data": []
+				},
+				{
+					"fieldNo": "13bea0aa-6fec-4635-a584-c3af5edcbe19",
+					"fieldName": "CreateOrder",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"restSource": "a22a01c4-3398-4030-8aee-08c56dec1123",
+					"restOperation": "2e862067-993e-4296-9ac1-7b8e2e1c9a26",
+					"data": []
+				},
+				{
+					"fieldNo": "7ce3af62-82cb-40ed-9f0a-48932582ed75",
+					"fieldName": "Metrics",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"restSource": "a22a01c4-3398-4030-8aee-08c56dec1123",
+					"restOperation": "78a413d3-6d63-452c-b343-335643edc717",
+					"data": []
+				},
+				{
+					"fieldNo": "bdf334d4-56bb-47b3-8c1a-0f4a3781cd7a",
+					"fieldName": "init",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/init.js",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"iaSettings": null,
+	"ver": "26.10.28.1320",
+	"application": "lt_stress",
+	"title": "LoadTest Stress",
+	"description": "Server stress runs and client bursts with stored metrics",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": false,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_integration": false,
+	"ui5_chart": false,
+	"ui5_dxp_ui": false,
+	"ui5_theme": "",
+	"ui5_version": "",
+	"ui5_language": "",
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": "",
+	"header": "",
+	"manifest": "",
+	"globalScript": "",
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": 4,
+	"printWidth": 100,
+	"generateVersionOnActivation": false,
+	"disableIntelligence": false,
+	"activationHistoryCount": 5,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"apis": [
+		{
+			"id": "a22a01c4-3398-4030-8aee-08c56dec1123",
+			"name": "LoadTest",
+			"ver": "26.10.28.1428"
+		}
+	],
+	"i18n": []
+}

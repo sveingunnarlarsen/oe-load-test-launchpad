@@ -1,0 +1,17 @@
+{
+	"id": "e64bfc11-4bc5-4a2f-954a-c49d19f655af",
+	"createdAt": "2026-10-28T10:26:17.012Z",
+	"createdBy": "gunnar",
+	"settings": {
+		"tableid": "8c73e775-8b05-49a9-87e9-cb8b7f1443c3",
+		"hasDocumentation": false
+	},
+	"documentation": [],
+	"name": "LoadTest Customers",
+	"description": "Table connector on lt_customer",
+	"group": null,
+	"type": "T",
+	"ver": "26.10.28.1126",
+	"disabled": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230"
+}

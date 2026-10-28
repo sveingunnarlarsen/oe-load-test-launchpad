@@ -1,0 +1,816 @@
+{
+	"id": "a22a01c4-3398-4030-8aee-08c56dec1123",
+	"createdAt": "2026-10-28T10:25:52.029Z",
+	"createdBy": "gunnar",
+	"auth": [],
+	"endpoints": [],
+	"paths": [
+		{
+			"id": "12496d3e-4562-4a80-a91b-1baa66baff7b",
+			"path": "/seed",
+			"summary": null,
+			"method": "POST",
+			"description": "POST /seed",
+			"responses": [
+				{
+					"id": "c3c93cb7-4820-40e3-b27b-11536584c10e",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "51ab04c8-63af-4e82-88c5-11a967ef7d4e",
+			"preRequestHook": null,
+			"tags": "Admin",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "5d5eaaba-8739-4b0f-afd3-5ca2cb781833",
+			"path": "/orders",
+			"summary": null,
+			"method": "GET",
+			"description": "GET /orders",
+			"responses": [
+				{
+					"id": "86ebd2e2-c2c8-4e2e-8249-693968b2de49",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "14a2487d-ab1c-440c-82aa-b911b08a6622",
+			"preRequestHook": null,
+			"tags": "Orders",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "2e862067-993e-4296-9ac1-7b8e2e1c9a26",
+			"path": "/orders",
+			"summary": null,
+			"method": "POST",
+			"description": "POST /orders",
+			"responses": [
+				{
+					"id": "9a6a26cd-0f3c-4ad8-b8f5-311f43e9271b",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "021024d7-f05b-4710-8789-9c127fa7b478",
+			"preRequestHook": null,
+			"tags": "Orders",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "00387302-034b-4f77-8ac1-fc0a8065f523",
+			"path": "/orders",
+			"summary": null,
+			"method": "DELETE",
+			"description": "DELETE /orders",
+			"responses": [
+				{
+					"id": "9169571d-3a07-4bc7-aabe-4a49c7cded10",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "11cb6eb5-6559-4d9c-9fc8-b1c7ea9f88df",
+			"preRequestHook": null,
+			"tags": "Orders",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "218917d7-3011-416e-b595-b51bfcc30308",
+			"path": "/stats",
+			"summary": null,
+			"method": "GET",
+			"description": "GET /stats",
+			"responses": [
+				{
+					"id": "6cb6179b-c8ac-4acb-a7dd-a521208feba1",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "748aa02d-a963-4bfe-bd14-2674f3b45535",
+			"preRequestHook": null,
+			"tags": "Stats",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "287d50e9-ac1d-42af-b737-28db700d3955",
+			"path": "/ping",
+			"summary": null,
+			"method": "GET",
+			"description": "GET /ping",
+			"responses": [
+				{
+					"id": "33a33f3c-b1a8-4553-af5b-6c8b4151fac6",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "f8269a07-807a-403f-969e-a29c3a199728",
+			"preRequestHook": null,
+			"tags": "Stats",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "58efdbd9-4660-4d9a-913a-6a7cb57e0b9d",
+			"path": "/bulk",
+			"summary": null,
+			"method": "POST",
+			"description": "POST /bulk",
+			"responses": [
+				{
+					"id": "d317832a-534f-486d-b85b-b596feb6b84c",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "cf126600-7b22-4db1-a6b6-60f3b8986598",
+			"preRequestHook": null,
+			"tags": "Load",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "ea1dfd3c-31df-4e36-9ddd-5da75cdc0bbc",
+			"path": "/order-status",
+			"summary": null,
+			"method": "PUT",
+			"description": "PUT /order-status",
+			"responses": [
+				{
+					"id": "388c2869-7469-4603-9508-b1d5f812181c",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "649b163a-ca3a-4a8a-b697-c4ce73a2598b",
+			"preRequestHook": null,
+			"tags": "Orders",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "9497590a-24c7-4d36-80ae-b049637fa80a",
+			"path": "/search",
+			"summary": null,
+			"method": "GET",
+			"description": "GET /search",
+			"responses": [
+				{
+					"id": "6512d0ba-b69c-4503-bfa5-868be3cc18a0",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "c600a45d-7d4b-4291-9ad6-e4fadd8ad15d",
+			"preRequestHook": null,
+			"tags": "Orders",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "36bc2fc1-1e92-4d9b-8998-e6516e5d6fb7",
+			"path": "/report",
+			"summary": null,
+			"method": "GET",
+			"description": "GET /report",
+			"responses": [
+				{
+					"id": "055f2197-85b3-4cd1-ac8c-541366c8de4c",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "be407825-6b1d-4513-8aa1-dfb1354571e6",
+			"preRequestHook": null,
+			"tags": "Stats",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "46425fff-9ac5-4595-bf58-adf53d03f8b4",
+			"path": "/cpu",
+			"summary": null,
+			"method": "GET",
+			"description": "GET /cpu",
+			"responses": [
+				{
+					"id": "a7633fd6-8790-464a-b6b9-3ed7af8c6f71",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "df584094-5b69-4b09-84cf-321fc64a6d8e",
+			"preRequestHook": null,
+			"tags": "Load",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "9deb5b78-9b3a-431e-86db-ab313335715e",
+			"path": "/stress",
+			"summary": null,
+			"method": "POST",
+			"description": "POST /stress",
+			"responses": [
+				{
+					"id": "acc2c491-5549-49fb-b7e2-b97b78fd99cc",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "d49c6153-edf2-4bc2-8114-4e07bf99d5e6",
+			"preRequestHook": null,
+			"tags": "Load",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "78a413d3-6d63-452c-b343-335643edc717",
+			"path": "/metrics",
+			"summary": null,
+			"method": "POST",
+			"description": "POST /metrics",
+			"responses": [
+				{
+					"id": "db35b2ce-8ae9-44d8-939a-f11ba3544ea0",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "987485fe-7fd7-4563-8398-28c6db975255",
+			"preRequestHook": null,
+			"tags": "Metrics",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "a4693965-3368-403a-98e6-20cadc57a87b",
+			"path": "/metrics-summary",
+			"summary": null,
+			"method": "GET",
+			"description": "GET /metrics-summary",
+			"responses": [
+				{
+					"id": "bfae883d-9b67-4b79-b92b-7996ec8c9437",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "489f2162-39d5-4a16-a2e6-789d176ecf44",
+			"preRequestHook": null,
+			"tags": "Metrics",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "54e87b35-b37d-4db8-a94b-ba257ead233a",
+			"path": "/jobs",
+			"summary": null,
+			"method": "GET",
+			"description": "GET /jobs",
+			"responses": [
+				{
+					"id": "99e41dfc-b77e-45c0-aa53-7861f1737807",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "array",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "f7e5d568-ff10-42e9-bbe2-1fa1896d35d1",
+			"preRequestHook": null,
+			"tags": "Metrics",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "3ef25c69-994b-472d-aba7-68e1fd2e5a46",
+			"path": "/job-archive",
+			"summary": null,
+			"method": "POST",
+			"description": "POST /job-archive",
+			"responses": [
+				{
+					"id": "808c816d-7ac4-4d5a-9ce2-a008ab2d8e63",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "3a3ce863-3db2-4ff9-b0db-1cc600c8ed60",
+			"preRequestHook": null,
+			"tags": "Jobs",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "28b16eef-cb2c-4250-b170-af39e74b21b4",
+			"path": "/job-recalc",
+			"summary": null,
+			"method": "POST",
+			"description": "POST /job-recalc",
+			"responses": [
+				{
+					"id": "a0c3349c-9df5-46d2-88fc-7100766ab5b7",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "9e234db8-9276-4a42-8819-a70614440c7b",
+			"preRequestHook": null,
+			"tags": "Jobs",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "759c39c0-c2ee-4419-b199-0a0d4cd4edf5",
+			"path": "/job-cleanup",
+			"summary": null,
+			"method": "POST",
+			"description": "POST /job-cleanup",
+			"responses": [
+				{
+					"id": "c8c9cd1b-d06c-4a45-bb12-f59c810eac57",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "477fcca5-62b2-41d1-948e-92ea73ebd4ea",
+			"preRequestHook": null,
+			"tags": "Jobs",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "0788a9ed-fec5-444c-9a55-a7361fa3054f",
+			"path": "/db-wait",
+			"summary": null,
+			"method": "GET",
+			"description": "GET /db-wait",
+			"responses": [
+				{
+					"id": "47ecb317-2b29-465d-8555-cd30c7b9ca44",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "9c4ef92a-4e2e-4cc1-85d1-27bd93bfc85d",
+			"preRequestHook": null,
+			"tags": "Load",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		},
+		{
+			"id": "ac62906b-ff32-45c8-abb2-aff0b773589e",
+			"path": "/report-fanout",
+			"summary": null,
+			"method": "GET",
+			"description": "GET /report-fanout",
+			"responses": [
+				{
+					"id": "ff4b610e-8771-43d6-a7d4-782f4940149a",
+					"status": "200",
+					"description": "OK",
+					"headers": [],
+					"content": [
+						{
+							"name": "data",
+							"objectType": "object",
+							"items": [],
+							"isArray": false,
+							"path": null
+						}
+					]
+				}
+			],
+			"headers": [],
+			"parameters": [],
+			"content": [],
+			"auth": [],
+			"endpoints": [],
+			"serverScript": "24c65615-1a61-474d-8358-843e8bb718c0",
+			"preRequestHook": null,
+			"tags": "Load",
+			"endpoint": null,
+			"operAccess": [],
+			"enableTrace": false,
+			"captureBody": false,
+			"enableExample": false,
+			"enableCredentials": false,
+			"forwardProxy": null
+		}
+	],
+	"definitions": [],
+	"documentation": [],
+	"name": "LoadTest",
+	"endpoint": "/api/serverscript/loadtest",
+	"ver": "26.10.28.1428",
+	"version": null,
+	"description": "Load test API over the lt_* tables",
+	"mediaType": null,
+	"securitySchemes": null,
+	"swaggerURI": null,
+	"swaggerSystem": null,
+	"apiType": "script",
+	"about": null,
+	"enableProxy": false,
+	"forwardProxy": null,
+	"restrictAccess": false,
+	"enableTrace": false,
+	"enableIDE": false,
+	"enableScriptEditor": false,
+	"internalAPI": false,
+	"isPublic": false,
+	"tlsAllowUntrusted": false,
+	"useOwnProcess": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"apiGroup": null,
+	"apiFormat": 1,
+	"roles": []
+}

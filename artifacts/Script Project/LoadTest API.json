@@ -1,0 +1,10 @@
+{
+	"id": "4a866290-0ed5-4270-b4b2-af3e5f5da945",
+	"createdAt": "2026-10-28T10:25:51.749Z",
+	"createdBy": "admin",
+	"name": "LoadTest API",
+	"description": "Server scripts behind the LoadTest API",
+	"ver": "26.10.28.1428",
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"projectLogLevel": null
+}

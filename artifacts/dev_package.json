@@ -1,0 +1,494 @@
+{
+	"id": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"createdAt": "2026-10-28T10:24:02.022Z",
+	"createdBy": "gunnar",
+	"git": {
+		"remote": "https://github.com/sveingunnarlarsen/oe-load-test-launchpad.git",
+		"branch": "master"
+	},
+	"name": "loadtest",
+	"description": "Load testing package: launchpad, apps, APIs, scripts, tables, adaptive and friends",
+	"ver": "26.10.28.1535",
+	"enableCICD": true,
+	"internalReadOnly": false,
+	"oeVersion": null,
+	"excludeTemplateFiles": true,
+	"roles": [],
+	"apps": [
+		{
+			"id": "e2c18add-ac05-4ddb-a719-254845e0ae1e",
+			"application": "lt_stress",
+			"title": "LoadTest Stress",
+			"description": "Server stress runs and client bursts with stored metrics"
+		},
+		{
+			"id": "cb51de49-c320-45e5-ae72-afaddf6f685c",
+			"application": "lt_ping",
+			"title": "LoadTest Ping",
+			"description": "Fires bursts of requests at GET /ping"
+		},
+		{
+			"id": "b4cb03df-cb24-4f29-890c-72fc292d042e",
+			"application": "lt_dashboard",
+			"title": "LoadTest Dashboard",
+			"description": "KPIs and latest orders from the LoadTest API"
+		},
+		{
+			"id": "667df033-2c50-4d9c-86cf-2550c0ec91bc",
+			"application": "lt_order_entry",
+			"title": "LoadTest Order Entry",
+			"description": "Creates orders through POST /orders"
+		},
+		{
+			"id": "2c281e59-f736-4e0a-ba5b-69bc6f1b0f74",
+			"application": "lt_report",
+			"title": "LoadTest Report",
+			"description": "Heavy N+1 report over customers, products and job runs"
+		}
+	],
+	"api": [
+		{
+			"id": "a22a01c4-3398-4030-8aee-08c56dec1123",
+			"name": "LoadTest",
+			"description": "Load test API over the lt_* tables",
+			"apiGroup": null
+		}
+	],
+	"odataSource": [],
+	"odataMock": [],
+	"dictionary": [
+		{
+			"id": "f7bccebf-4853-42eb-adab-3f5e5fb74d3e",
+			"name": "lt_order",
+			"description": "Load test orders"
+		},
+		{
+			"id": "ed670144-eb86-41ac-ac35-7d742b2b28ce",
+			"name": "lt_metric",
+			"description": "Load test timing samples"
+		},
+		{
+			"id": "8c73e775-8b05-49a9-87e9-cb8b7f1443c3",
+			"name": "lt_customer",
+			"description": "Load test customers"
+		},
+		{
+			"id": "80bb67b0-25fb-40c2-8839-9d8ac6424a7d",
+			"name": "lt_order_archive",
+			"description": "Archived load test orders"
+		},
+		{
+			"id": "3d8c9036-fa22-4f1a-93d5-30fb44828bdd",
+			"name": "lt_customer_stats",
+			"description": "Per-customer aggregates maintained by the recalc job"
+		},
+		{
+			"id": "1e67bf62-2407-49b9-a944-5bbcb64354ea",
+			"name": "lt_order_line",
+			"description": "Load test order lines"
+		},
+		{
+			"id": "037b4285-4f23-4d4f-b122-4bb68f0f4a3c",
+			"name": "lt_job_run",
+			"description": "Job execution log written by the LoadTest jobs"
+		}
+	],
+	"jsclass": [
+		{
+			"id": "f8269a07-807a-403f-969e-a29c3a199728",
+			"name": "lt_ping",
+			"description": "LoadTest: lt_ping"
+		},
+		{
+			"id": "f7e5d568-ff10-42e9-bbe2-1fa1896d35d1",
+			"name": "lt_job_runs",
+			"description": "LoadTest: lt_job_runs"
+		},
+		{
+			"id": "df584094-5b69-4b09-84cf-321fc64a6d8e",
+			"name": "lt_cpu",
+			"description": "LoadTest: lt_cpu"
+		},
+		{
+			"id": "d49c6153-edf2-4bc2-8114-4e07bf99d5e6",
+			"name": "lt_stress",
+			"description": "LoadTest: lt_stress"
+		},
+		{
+			"id": "cf126600-7b22-4db1-a6b6-60f3b8986598",
+			"name": "lt_bulk_orders",
+			"description": "LoadTest: lt_bulk_orders"
+		},
+		{
+			"id": "c600a45d-7d4b-4291-9ad6-e4fadd8ad15d",
+			"name": "lt_orders_search",
+			"description": "LoadTest: lt_orders_search"
+		},
+		{
+			"id": "be407825-6b1d-4513-8aa1-dfb1354571e6",
+			"name": "lt_report",
+			"description": "LoadTest: lt_report"
+		},
+		{
+			"id": "9e234db8-9276-4a42-8819-a70614440c7b",
+			"name": "lt_job_recalc",
+			"description": "LoadTest: lt_job_recalc"
+		},
+		{
+			"id": "9c4ef92a-4e2e-4cc1-85d1-27bd93bfc85d",
+			"name": "lt_db_wait",
+			"description": "LoadTest: lt_db_wait"
+		},
+		{
+			"id": "987485fe-7fd7-4563-8398-28c6db975255",
+			"name": "lt_metrics_record",
+			"description": "LoadTest: lt_metrics_record"
+		},
+		{
+			"id": "748aa02d-a963-4bfe-bd14-2674f3b45535",
+			"name": "lt_stats",
+			"description": "LoadTest: lt_stats"
+		},
+		{
+			"id": "649b163a-ca3a-4a8a-b697-c4ce73a2598b",
+			"name": "lt_orders_update",
+			"description": "LoadTest: lt_orders_update"
+		},
+		{
+			"id": "51ab04c8-63af-4e82-88c5-11a967ef7d4e",
+			"name": "lt_seed",
+			"description": "LoadTest: lt_seed"
+		},
+		{
+			"id": "489f2162-39d5-4a16-a2e6-789d176ecf44",
+			"name": "lt_metrics_summary",
+			"description": "LoadTest: lt_metrics_summary"
+		},
+		{
+			"id": "477fcca5-62b2-41d1-948e-92ea73ebd4ea",
+			"name": "lt_job_cleanup",
+			"description": "LoadTest: lt_job_cleanup"
+		},
+		{
+			"id": "3a3ce863-3db2-4ff9-b0db-1cc600c8ed60",
+			"name": "lt_job_archive",
+			"description": "LoadTest: lt_job_archive"
+		},
+		{
+			"id": "24c65615-1a61-474d-8358-843e8bb718c0",
+			"name": "lt_report_fanout",
+			"description": "LoadTest: lt_report_fanout"
+		},
+		{
+			"id": "14a2487d-ab1c-440c-82aa-b911b08a6622",
+			"name": "lt_orders_list",
+			"description": "LoadTest: lt_orders_list"
+		},
+		{
+			"id": "11cb6eb5-6559-4d9c-9fc8-b1c7ea9f88df",
+			"name": "lt_order_delete",
+			"description": "LoadTest: lt_order_delete"
+		},
+		{
+			"id": "021024d7-f05b-4710-8789-9c127fa7b478",
+			"name": "lt_order_create",
+			"description": "LoadTest: lt_order_create"
+		}
+	],
+	"jsscript_group": [
+		{
+			"id": "4a866290-0ed5-4270-b4b2-af3e5f5da945",
+			"name": "LoadTest API",
+			"description": "Server scripts behind the LoadTest API"
+		}
+	],
+	"theme": [],
+	"theme_generator": [],
+	"pdf": [],
+	"rulesengine": [],
+	"reports": [
+		{
+			"id": "9ab5cd97-6fe2-40f8-a644-d29183ca94cd",
+			"name": "lt_job_runs_list",
+			"description": "Job runs",
+			"application": "neptunedxp_adaptive_list"
+		},
+		{
+			"id": "61c5f87a-60af-4058-afd3-bf60d0537851",
+			"name": "lt_orders_list",
+			"description": "LoadTest orders",
+			"application": "neptunedxp_adaptive_list"
+		},
+		{
+			"id": "390e4586-afbb-4777-a145-2a526fcdf7c3",
+			"name": "lt_customer_stats_list",
+			"description": "Customer totals",
+			"application": "neptunedxp_adaptive_list"
+		},
+		{
+			"id": "348a2f0a-f4d8-4f32-8182-8f379b773a70",
+			"name": "lt_order_edit",
+			"description": "LoadTest order form",
+			"application": "neptunedxp_adaptive_edit"
+		},
+		{
+			"id": "2bb14421-398c-4be0-9b5c-25e1f4777c93",
+			"name": "lt_metrics_list",
+			"description": "Timing samples",
+			"application": "neptunedxp_adaptive_list"
+		}
+	],
+	"api_authentication": [],
+	"api_group": [],
+	"tile": [
+		{
+			"id": "e9d71cb5-9117-4dbf-bca4-0fc2ad597fb7",
+			"description": "App Designer form posting to POST /orders",
+			"name": "loadtest_order_entry"
+		},
+		{
+			"id": "dc97910b-c2e6-4688-b77d-90af04077e31",
+			"description": "Opens the cockpit job scheduler log",
+			"name": "loadtest_jobs_cockpit"
+		},
+		{
+			"id": "d20759f0-3d95-4aa5-a01f-14835a3b9ae7",
+			"description": "App Designer app calling GET /stats and GET /orders",
+			"name": "loadtest_dashboard"
+		},
+		{
+			"id": "a94d5840-ab49-41eb-89a8-f4acbc8356fe",
+			"description": "Fires configurable bursts of requests at the server",
+			"name": "loadtest_ping"
+		},
+		{
+			"id": "9aa64cf1-2be8-49bb-8927-80ba89693aea",
+			"description": "Opens the LoadTest API documentation in a new window",
+			"name": "loadtest_docs"
+		},
+		{
+			"id": "96d2adc5-318a-42e4-add9-32ade27304eb",
+			"description": null,
+			"name": "loadtest_job_runs"
+		},
+		{
+			"id": "89da8135-2c94-487f-b15c-ebfa100683b0",
+			"description": "App Designer app: POST /stress and parallel bursts with stored metrics",
+			"name": "loadtest_stress"
+		},
+		{
+			"id": "8599db46-39f8-4e22-a7bc-421af54ca7fa",
+			"description": null,
+			"name": "loadtest_customer_stats"
+		},
+		{
+			"id": "6d4938c4-e6ba-4583-ad60-53a61dafa01b",
+			"description": "Runs client load, server stress and jobs; stores and compares metrics",
+			"name": "loadtest_webapp"
+		},
+		{
+			"id": "6423faf5-925a-4731-bc6c-4b0719363e80",
+			"description": "Paged search with LIKE filters and line lookup",
+			"name": "loadtest_search"
+		},
+		{
+			"id": "6112504a-862c-404a-a163-6f15f69b17c9",
+			"description": null,
+			"name": "loadtest_metrics"
+		},
+		{
+			"id": "49b569a3-22ba-4bb9-b2fe-747c283db4e3",
+			"description": "GET /report: one query per customer and per order",
+			"name": "loadtest_report"
+		},
+		{
+			"id": "461632ef-fd3d-4ba0-8fcc-aa15c3373334",
+			"description": "Adaptive list with create and edit dialogs",
+			"name": "loadtest_adaptive_list"
+		},
+		{
+			"id": "0a3935d3-bc0f-47cc-be1b-70a58e122311",
+			"description": "Prime sieve in the script engine, opens the JSON in a new window",
+			"name": "loadtest_cpu"
+		}
+	],
+	"tile_layout": [
+		{
+			"id": "51d711e0-bd70-4e5f-bc6c-12898c3e2f82",
+			"NAME": "loadtest_tile"
+		}
+	],
+	"category": [
+		{
+			"id": "f995c956-c0e1-4be5-8874-27afc8c7bdd5",
+			"description": null,
+			"name": "loadtest_main"
+		},
+		{
+			"id": "a6aa0f1c-bd1e-47fe-8bfc-d9223f9c4190",
+			"description": null,
+			"name": "loadtest_admin"
+		},
+		{
+			"id": "97c47eac-dcb7-4618-b898-3bea90b8e97a",
+			"description": null,
+			"name": "loadtest_analytics"
+		},
+		{
+			"id": "7ed8d75b-212a-4789-9e51-2ca1776e4b83",
+			"description": null,
+			"name": "loadtest_raw_data"
+		},
+		{
+			"id": "45034860-1a44-4a85-b729-bda082face14",
+			"description": null,
+			"name": "loadtest_operations"
+		},
+		{
+			"id": "3dfd4266-985a-4019-a69c-b771678f4518",
+			"description": null,
+			"name": "loadtest_tools"
+		},
+		{
+			"id": "2da64a8e-b714-4349-8e0b-65c6858f9fb1",
+			"description": null,
+			"name": "loadtest_order_tools"
+		}
+	],
+	"tilegroup_layout": [
+		{
+			"id": "2c1148f5-efef-4f3f-b7c8-106c3634b31d",
+			"NAME": "loadtest_group"
+		}
+	],
+	"launchpad": [
+		{
+			"id": "37944aa5-4bc1-44df-b5da-eeaf6660237b",
+			"name": "loadtest",
+			"description": "Launchpad for the loadtest package: roles, layouts, nested groups"
+		}
+	],
+	"launchpad_layout": [
+		{
+			"id": "5e1909e3-a4aa-4d24-9986-ea82f46ebd0d",
+			"NAME": "loadtest_light",
+			"DESCR": "LoadTest launchpad layout (light)"
+		},
+		{
+			"id": "39846dcd-7e1c-4c4a-92ca-628d7a256d06",
+			"NAME": "loadtest_dark",
+			"DESCR": "LoadTest launchpad layout (dark)"
+		}
+	],
+	"certificates": [],
+	"role": [
+		{
+			"id": "4e3e47ff-ff10-44d9-8010-91a9f7ccd319",
+			"name": "LoadTest Admin",
+			"description": "Load test admin tools: jobs, ping, cpu, API docs"
+		},
+		{
+			"id": "0f58c853-b95c-4597-9c4c-e53df57a5cdd",
+			"name": "LoadTest Operator",
+			"description": "Runs the load test launchpad: dashboard, orders, stress"
+		}
+	],
+	"systems": [],
+	"doc": [],
+	"wf_notifications": [],
+	"department": [
+		{
+			"id": "1275ee36-1047-4c06-9fdc-89fce5af86c5",
+			"name": "LoadTest Testers",
+			"description": "Users taking part in load tests"
+		}
+	],
+	"script_scheduler": [
+		{
+			"id": "adc49e85-3958-4710-913d-2e3d4a88137a",
+			"name": "LoadTest Recalc",
+			"description": "Recomputes per-customer totals into lt_customer_stats"
+		},
+		{
+			"id": "abb69e8a-0784-409b-9d8f-319e82317598",
+			"name": "LoadTest Archive",
+			"description": "Moves closed orders older than 10 minutes into lt_order_archive"
+		},
+		{
+			"id": "2c0b6e4c-6398-45b9-9a14-b8f7b881682e",
+			"name": "LoadTest Cleanup",
+			"description": "Removes day-old metrics and caps lt_order at 20000 rows"
+		}
+	],
+	"wf_definition": [],
+	"connector": [
+		{
+			"id": "fd9bd85e-5731-4214-b0cc-f046c0583c17",
+			"name": "LoadTest Customer Stats",
+			"description": "Table connector on customer_stats"
+		},
+		{
+			"id": "e64bfc11-4bc5-4a2f-954a-c49d19f655af",
+			"name": "LoadTest Customers",
+			"description": "Table connector on lt_customer"
+		},
+		{
+			"id": "ab2b4da7-72e4-465b-8363-c714d3d91ea3",
+			"name": "LoadTest Metrics",
+			"description": "Table connector on metrics"
+		},
+		{
+			"id": "9dbb9694-abb2-4dd7-a178-f148b406d7d9",
+			"name": "LoadTest Orders",
+			"description": "Table connector on lt_order"
+		},
+		{
+			"id": "1114aec0-368c-43a6-90e4-9a764e62d1a5",
+			"name": "LoadTest Job Runs",
+			"description": "Table connector on job_runs"
+		}
+	],
+	"i18n": [
+		{
+			"id": "48fe6720-489d-4307-98d8-8bb736d20c04",
+			"name": "loadtest_texts",
+			"description": "Shared texts for the load test apps"
+		}
+	],
+	"events": [],
+	"code_snippets": [
+		{
+			"id": "594afb98-b931-43f7-972f-b32715b16ffa",
+			"name": "ltAmount",
+			"description": "Formats an order amount with two decimals"
+		}
+	],
+	"wf_determination": [],
+	"wf_taskaction": [],
+	"theme_ui5": [],
+	"webapp": [
+		{
+			"id": "a9821fdf-cfee-4783-9a0d-67fd35a28523",
+			"name": "loadtest_static",
+			"description": "Preact dashboard: runs load, stores metrics, compares runs"
+		}
+	],
+	"ui5_control": [],
+	"ai_agent": [],
+	"ai_model": [],
+	"ai_prompt": [],
+	"ai_tool": [],
+	"ai_guardrail": [],
+	"sap_data_source": [],
+	"path_rewrite": [],
+	"font": [],
+	"vault": [],
+	"processFlow": [
+		{
+			"id": "9eea2257-d427-405b-949e-67f253ac1b3e",
+			"name": "lt_order_intake",
+			"description": "Runs the stats script after an order is created"
+		}
+	],
+	"workflow_logs": []
+}

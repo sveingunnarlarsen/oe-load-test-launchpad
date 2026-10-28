@@ -1,0 +1,17 @@
+{
+	"id": "fd9bd85e-5731-4214-b0cc-f046c0583c17",
+	"createdAt": "2026-10-28T12:27:43.407Z",
+	"createdBy": "gunnar",
+	"settings": {
+		"tableid": "3d8c9036-fa22-4f1a-93d5-30fb44828bdd",
+		"hasDocumentation": false
+	},
+	"documentation": [],
+	"name": "LoadTest Customer Stats",
+	"description": "Table connector on customer_stats",
+	"group": null,
+	"type": "T",
+	"ver": "26.10.28.1327",
+	"disabled": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230"
+}

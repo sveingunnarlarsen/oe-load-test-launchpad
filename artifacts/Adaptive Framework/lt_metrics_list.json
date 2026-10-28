@@ -1,0 +1,215 @@
+{
+	"id": "2bb14421-398c-4be0-9b5c-25e1f4777c93",
+	"createdAt": "2026-10-28T12:27:43.461Z",
+	"createdBy": "gunnar",
+	"settings": {
+		"properties": {
+			"report": {
+				"title": "Timing samples",
+				"subTitle": "Every stored request timing (lt_metric)",
+				"autoRun": true,
+				"autoRunFocus": true,
+				"enableRun": true,
+				"enableCreate": false,
+				"enableDelete": false,
+				"enableExport": true,
+				"enableMultiSelect": false,
+				"enableVariant": false,
+				"hideHeader": false,
+				"iconButtonExport": "sap-icon://excel-attachment",
+				"typeButtonExport": "Transparent",
+				"searchLabel": "Search",
+				"searchPlaceholder": ""
+			},
+			"form": {},
+			"table": {}
+		},
+		"fieldCatalog": [
+			{
+				"name": "runId",
+				"label": "Run",
+				"type": "smalltext",
+				"usage": "BOTH"
+			},
+			{
+				"name": "suite",
+				"label": "Suite",
+				"type": "smalltext",
+				"usage": "BOTH"
+			},
+			{
+				"name": "endpoint",
+				"label": "Endpoint",
+				"type": "smalltext",
+				"usage": "BOTH"
+			},
+			{
+				"name": "method",
+				"label": "Method",
+				"type": "smalltext",
+				"usage": "BOTH"
+			},
+			{
+				"name": "durationMs",
+				"label": "Duration ms",
+				"type": "integer",
+				"usage": "BOTH"
+			},
+			{
+				"name": "ok",
+				"label": "OK",
+				"type": "boolean",
+				"usage": "BOTH"
+			},
+			{
+				"name": "status",
+				"label": "Status",
+				"type": "integer",
+				"usage": "BOTH"
+			},
+			{
+				"name": "createdAt",
+				"label": "Created At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			},
+			{
+				"name": "updatedAt",
+				"label": "Updated At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [
+			{
+				"name": "runId",
+				"text": "Run",
+				"visible": true,
+				"fieldPos": 1
+			},
+			{
+				"name": "suite",
+				"text": "Suite",
+				"visible": true,
+				"fieldPos": 2
+			},
+			{
+				"name": "endpoint",
+				"text": "Endpoint",
+				"visible": true,
+				"fieldPos": 3
+			}
+		],
+		"fieldsRun": [
+			{
+				"name": "runId",
+				"text": "Run",
+				"fieldPos": 1,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "suite",
+				"text": "Suite",
+				"fieldPos": 2,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "method",
+				"text": "Method",
+				"fieldPos": 3,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "endpoint",
+				"text": "Endpoint",
+				"fieldPos": 4,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "durationMs",
+				"text": "ms",
+				"fieldPos": 5,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "status",
+				"text": "Status",
+				"fieldPos": 6,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "createdAt",
+				"text": "At",
+				"fieldPos": 7,
+				"visible": true,
+				"enableFilter": false,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block",
+				"formatter": "date00",
+				"width": "200px"
+			}
+		],
+		"defaultVariant": {
+			"id": "9b878539-018e-4ded-ab20-45d894b09408",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		},
+		"translation": {
+			"EN": {
+				"report": {},
+				"form": {},
+				"table": {},
+				"fieldCatalog": {}
+			}
+		},
+		"table": "lt_metric"
+	},
+	"name": "lt_metrics_list",
+	"description": "Timing samples",
+	"group": "LoadTest",
+	"type": "C",
+	"connectorid": "ab2b4da7-72e4-465b-8363-c714d3d91ea3",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "26.10.28.1327",
+	"disabled": false,
+	"appType": "A",
+	"application": "neptunedxp_adaptive_list",
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null,
+	"i18n": []
+}

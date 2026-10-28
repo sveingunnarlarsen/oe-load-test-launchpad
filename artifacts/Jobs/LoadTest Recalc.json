@@ -1,0 +1,33 @@
+{
+	"id": "adc49e85-3958-4710-913d-2e3d4a88137a",
+	"createdAt": "2026-10-28T12:06:24.819Z",
+	"createdBy": "gunnar",
+	"scripts": [
+		{
+			"id": "9e234db8-9276-4a42-8819-a70614440c7b",
+			"name": "lt_job_recalc",
+			"number": 1,
+			"abort": true,
+			"continue": false,
+			"skipto": false,
+			"skiptoNr": null
+		}
+	],
+	"name": "LoadTest Recalc",
+	"description": "Recomputes per-customer totals into lt_customer_stats",
+	"alertEmail": "",
+	"active": true,
+	"intervalMonths": 0,
+	"intervalDays": 0,
+	"intervalHours": 0,
+	"intervalMinutes": 2,
+	"intervalSeconds": 0,
+	"maxRuntimeSeconds": "600",
+	"restartMaxRuntimeAbort": false,
+	"startdate": "2026-10-28T12:06:24.804Z",
+	"stopdate": "2035-01-01T00:00:00.000Z",
+	"executeInNextCycle": false,
+	"ver": "26.10.28.1329",
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"runAsUser": "60b7b11e-5d5e-4d1e-bef9-7955c6ed7659"
+}

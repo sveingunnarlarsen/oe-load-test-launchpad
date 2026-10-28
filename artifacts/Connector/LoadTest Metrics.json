@@ -1,0 +1,17 @@
+{
+	"id": "ab2b4da7-72e4-465b-8363-c714d3d91ea3",
+	"createdAt": "2026-10-28T12:27:43.346Z",
+	"createdBy": "gunnar",
+	"settings": {
+		"tableid": "ed670144-eb86-41ac-ac35-7d742b2b28ce",
+		"hasDocumentation": false
+	},
+	"documentation": [],
+	"name": "LoadTest Metrics",
+	"description": "Table connector on metrics",
+	"group": null,
+	"type": "T",
+	"ver": "26.10.28.1327",
+	"disabled": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230"
+}

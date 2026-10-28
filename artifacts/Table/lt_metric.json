@@ -1,0 +1,92 @@
+{
+	"id": "ed670144-eb86-41ac-ac35-7d742b2b28ce",
+	"createdAt": "2026-10-28T12:06:23.609Z",
+	"createdBy": "gunnar",
+	"fields": [
+		{
+			"id": "2a03f989-eb05-4a3a-81d6-c0101d73a36b",
+			"fieldName": "runId",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Run"
+		},
+		{
+			"id": "ce9f9f20-f6b9-4b0b-a820-6d04c497bcdc",
+			"fieldName": "suite",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Suite"
+		},
+		{
+			"id": "fd92614f-10c0-468c-ab56-ca04853e8776",
+			"fieldName": "endpoint",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Endpoint"
+		},
+		{
+			"id": "e91c8c59-1a5a-47ba-86c3-b892db2b31a6",
+			"fieldName": "method",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Method"
+		},
+		{
+			"id": "41c43de9-57df-4ace-90ea-cb150f022b76",
+			"fieldName": "durationMs",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Duration ms"
+		},
+		{
+			"id": "c1612411-246e-497e-962e-90a1ae5889a3",
+			"fieldName": "ok",
+			"fieldType": "boolean",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Success"
+		},
+		{
+			"id": "51b6e48f-03b6-448e-b39c-78a5c1ce4283",
+			"fieldName": "status",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "HTTP status"
+		}
+	],
+	"indices": [
+		{
+			"id": "5e924314-71e8-4428-94b5-92f748f432c4",
+			"isUnique": false,
+			"name": "lt_metric_run",
+			"columns": [
+				{
+					"id": "2a03f989-eb05-4a3a-81d6-c0101d73a36b",
+					"fieldName": "runId",
+					"fieldType": "smalltext",
+					"isUnique": false,
+					"isNullable": true,
+					"description": "Run"
+				}
+			],
+			"isVector": false
+		}
+	],
+	"foreignKeys": [],
+	"vectorStoreConfig": null,
+	"name": "lt_metric",
+	"description": "Load test timing samples",
+	"ver": "26.10.28.1306",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"generationStrategy": null,
+	"rolesRead": [],
+	"rolesWrite": []
+}

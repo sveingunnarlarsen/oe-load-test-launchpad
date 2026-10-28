@@ -1,0 +1,46 @@
+{
+	"id": "a9821fdf-cfee-4783-9a0d-67fd35a28523",
+	"createdAt": "2026-10-28T10:26:17.154Z",
+	"createdBy": "gunnar",
+	"settings": {
+		"mainFilePath": "index.html"
+	},
+	"name": "loadtest_static",
+	"type": "react",
+	"description": "Preact dashboard: runs load, stores metrics, compares runs",
+	"ver": "26.10.28.1338",
+	"onlyRuntime": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"roles": [],
+	"runtime": {
+		"id": "a9821fdf-cfee-4783-9a0d-67fd35a28523",
+		"createdAt": "2026-10-28T10:26:17.154Z",
+		"page": "file:///webapp-page.html",
+		"name": "loadtest_static",
+		"ver": null,
+		"publicAccess": false,
+		"assets": [
+			{
+				"runtimeId": "a9821fdf-cfee-4783-9a0d-67fd35a28523",
+				"path": "/app.css",
+				"createdAt": "2026-10-28T12:38:02.852Z",
+				"updatedAt": "2026-10-28T12:38:02.852Z",
+				"source": "file:////app.css"
+			},
+			{
+				"runtimeId": "a9821fdf-cfee-4783-9a0d-67fd35a28523",
+				"path": "/app.js",
+				"createdAt": "2026-10-28T12:38:02.850Z",
+				"updatedAt": "2026-10-28T12:38:02.850Z",
+				"source": "file:////app.js"
+			},
+			{
+				"runtimeId": "a9821fdf-cfee-4783-9a0d-67fd35a28523",
+				"path": "/index.html",
+				"createdAt": "2026-10-28T12:38:02.848Z",
+				"updatedAt": "2026-10-28T12:38:02.848Z",
+				"source": "PCFkb2N0eXBlIGh0bWw+CjxodG1sIGxhbmc9ImVuIj4KPGhlYWQ+CjxtZXRhIGNoYXJzZXQ9InV0Zi04Ij4KPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xIj4KPHRpdGxlPkxvYWRUZXN0IGNvbnRyb2wgcm9vbTwvdGl0bGU+CjxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iL3dlYmFwcC9sb2FkdGVzdF9zdGF0aWMvYXBwLmNzcyI+CjwvaGVhZD4KPGJvZHk+CjxkaXYgaWQ9ImFwcCI+PC9kaXY+CjxzY3JpcHQgc3JjPSIvd2ViYXBwL2xvYWR0ZXN0X3N0YXRpYy9hcHAuanMiPjwvc2NyaXB0Pgo8L2JvZHk+CjwvaHRtbD4K"
+			}
+		]
+	}
+}

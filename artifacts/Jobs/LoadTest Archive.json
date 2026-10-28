@@ -1,0 +1,33 @@
+{
+	"id": "abb69e8a-0784-409b-9d8f-319e82317598",
+	"createdAt": "2026-10-28T12:06:24.796Z",
+	"createdBy": "gunnar",
+	"scripts": [
+		{
+			"id": "3a3ce863-3db2-4ff9-b0db-1cc600c8ed60",
+			"name": "lt_job_archive",
+			"number": 1,
+			"abort": true,
+			"continue": false,
+			"skipto": false,
+			"skiptoNr": null
+		}
+	],
+	"name": "LoadTest Archive",
+	"description": "Moves closed orders older than 10 minutes into lt_order_archive",
+	"alertEmail": "",
+	"active": true,
+	"intervalMonths": 0,
+	"intervalDays": 0,
+	"intervalHours": 0,
+	"intervalMinutes": 5,
+	"intervalSeconds": 0,
+	"maxRuntimeSeconds": "600",
+	"restartMaxRuntimeAbort": false,
+	"startdate": "2026-10-28T12:06:24.780Z",
+	"stopdate": "2035-01-01T00:00:00.000Z",
+	"executeInNextCycle": false,
+	"ver": "26.10.28.1329",
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"runAsUser": "60b7b11e-5d5e-4d1e-bef9-7955c6ed7659"
+}

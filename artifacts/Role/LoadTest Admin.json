@@ -1,0 +1,36 @@
+{
+	"id": "4e3e47ff-ff10-44d9-8010-91a9f7ccd319",
+	"createdAt": "2026-10-28T12:28:20.535Z",
+	"createdBy": "gunnar",
+	"name": "LoadTest Admin",
+	"description": "Load test admin tools: jobs, ping, cpu, API docs",
+	"ver": "26.10.28.1328",
+	"isGlobalAdmin": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"acl": [
+		{
+			"id": "toolsjobschedulerlog_D",
+			"name": "Job Log"
+		},
+		{
+			"id": "toolsjobscheduler_E",
+			"name": "Job Manage"
+		},
+		{
+			"id": "runlaunchpad_D",
+			"name": "Launchpad"
+		},
+		{
+			"id": "monitoroverview_D",
+			"name": "System Processes"
+		},
+		{
+			"id": "monitoring_D",
+			"name": "Monitoring"
+		},
+		{
+			"id": "connectivityswaggerui_D",
+			"name": "Swagger UI"
+		}
+	]
+}

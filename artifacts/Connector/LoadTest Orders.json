@@ -1,0 +1,17 @@
+{
+	"id": "9dbb9694-abb2-4dd7-a178-f148b406d7d9",
+	"createdAt": "2026-10-28T10:26:16.978Z",
+	"createdBy": "gunnar",
+	"settings": {
+		"tableid": "f7bccebf-4853-42eb-adab-3f5e5fb74d3e",
+		"hasDocumentation": false
+	},
+	"documentation": [],
+	"name": "LoadTest Orders",
+	"description": "Table connector on lt_order",
+	"group": null,
+	"type": "T",
+	"ver": "26.10.28.1126",
+	"disabled": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230"
+}

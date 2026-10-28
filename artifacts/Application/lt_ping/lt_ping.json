@@ -1,0 +1,383 @@
+{
+	"id": "cb51de49-c320-45e5-ae72-afaddf6f685c",
+	"createdAt": "2026-10-28T10:30:15.168Z",
+	"createdBy": "gunnar",
+	"objects": [
+		{
+			"fieldNo": "52543070-85cd-4ecb-aa98-bd1a413531ab",
+			"fieldName": "oApp",
+			"fieldParent": 0,
+			"fieldType": "sap.m.App",
+			"script": "",
+			"request": [],
+			"response": [],
+			"attributes": [],
+			"data": [
+				{
+					"fieldNo": "0d768602-8599-4777-8761-63b772c77b06",
+					"fieldName": "oPage",
+					"fieldParent": "52543070-85cd-4ecb-aa98-bd1a413531ab",
+					"fieldType": "sap.m.Page",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [
+						{
+							"script": "",
+							"translation": [],
+							"attribute": "title",
+							"grouping": "Properties",
+							"value": "LoadTest Ping"
+						}
+					],
+					"data": [
+						{
+							"fieldNo": "fa4013d6-51d6-4f41-8388-17ed770d2677",
+							"fieldName": "formRun",
+							"fieldParent": "0d768602-8599-4777-8761-63b772c77b06",
+							"fieldType": "sap.ui.layout.form.SimpleForm",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"script": "",
+									"translation": [],
+									"attribute": "editable",
+									"grouping": "Properties",
+									"value": "true"
+								},
+								{
+									"script": "",
+									"translation": [],
+									"attribute": "layout",
+									"grouping": "Properties",
+									"value": "ResponsiveGridLayout"
+								}
+							],
+							"data": [
+								{
+									"fieldNo": "a09c01ce-4265-4066-bc8a-bbfbe2c9cf60",
+									"fieldName": "lblCount",
+									"fieldParent": "fa4013d6-51d6-4f41-8388-17ed770d2677",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Requests"
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "8ff452e7-0b15-4cca-84fc-074faff3cff7",
+									"fieldName": "inpCount",
+									"fieldParent": "fa4013d6-51d6-4f41-8388-17ed770d2677",
+									"fieldType": "sap.m.Input",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "value",
+											"grouping": "Properties",
+											"value": "{Run>/count}"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Number"
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "04bff1c6-be85-42be-8f08-107459fbfe13",
+									"fieldName": "lblBusy",
+									"fieldParent": "fa4013d6-51d6-4f41-8388-17ed770d2677",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Server busy ms per request"
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "34f244d6-3c20-4b7c-bf66-8fcc76301d74",
+									"fieldName": "inpBusy",
+									"fieldParent": "fa4013d6-51d6-4f41-8388-17ed770d2677",
+									"fieldType": "sap.m.Input",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "value",
+											"grouping": "Properties",
+											"value": "{Run>/busy}"
+										},
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "type",
+											"grouping": "Properties",
+											"value": "Number"
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "37b47425-5435-4785-b7b9-f91256e8448f",
+									"fieldName": "lblDone",
+									"fieldParent": "fa4013d6-51d6-4f41-8388-17ed770d2677",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Completed"
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "74733746-dd39-408d-b087-ea966ecc917f",
+									"fieldName": "txtDone",
+									"fieldParent": "fa4013d6-51d6-4f41-8388-17ed770d2677",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{Run>/done} / {Run>/count}"
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "1ca1600b-fbf6-48ad-97bf-0258091d74e5",
+									"fieldName": "lblElapsed",
+									"fieldParent": "fa4013d6-51d6-4f41-8388-17ed770d2677",
+									"fieldType": "sap.m.Label",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "Elapsed ms"
+										}
+									],
+									"data": []
+								},
+								{
+									"fieldNo": "20c736f9-f73e-4170-a3d8-9cefc90bc6ec",
+									"fieldName": "txtElapsed",
+									"fieldParent": "fa4013d6-51d6-4f41-8388-17ed770d2677",
+									"fieldType": "sap.m.Text",
+									"script": "",
+									"request": [],
+									"response": [],
+									"attributes": [
+										{
+											"script": "",
+											"translation": [],
+											"attribute": "text",
+											"grouping": "Properties",
+											"value": "{Run>/elapsed}"
+										}
+									],
+									"data": []
+								}
+							]
+						},
+						{
+							"fieldNo": "9a12fbf6-8aff-46bd-b936-2e8957595463",
+							"fieldName": "butRun",
+							"fieldParent": "0d768602-8599-4777-8761-63b772c77b06",
+							"fieldType": "sap.m.Button",
+							"script": "",
+							"request": [],
+							"response": [],
+							"attributes": [
+								{
+									"script": "",
+									"translation": [],
+									"attribute": "text",
+									"grouping": "Properties",
+									"value": "Run pings"
+								},
+								{
+									"script": "",
+									"translation": [],
+									"attribute": "type",
+									"grouping": "Properties",
+									"value": "Emphasized"
+								},
+								{
+									"script": "",
+									"translation": [],
+									"attribute": "enabled",
+									"grouping": "Properties",
+									"value": "{= !${Run>/running} }"
+								},
+								{
+									"script": "",
+									"translation": [],
+									"attribute": "styleClass",
+									"grouping": "Properties",
+									"value": "sapUiSmallMargin"
+								},
+								{
+									"script": "ltRunPings();",
+									"translation": [],
+									"attribute": "press",
+									"grouping": "Events",
+									"value": "Anonymous Function",
+									"language": "javascript"
+								}
+							],
+							"data": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"fieldNo": 99999,
+			"data": [
+				{
+					"fieldNo": "5cc2c5a9-a9fa-42f9-9e84-e22407e46cd1",
+					"fieldName": "Run",
+					"fieldParent": 99999,
+					"fieldType": "neptune.model",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"bindingValue": "Generic Object",
+					"bindingType": "u",
+					"bindingSource": "P9",
+					"assignDefaultData": true,
+					"data": []
+				},
+				{
+					"fieldNo": "d20b09b5-a83a-49bc-a725-e2759c31cca2",
+					"fieldName": "Ping",
+					"fieldParent": 99999,
+					"fieldType": "neptune.restapi",
+					"script": "",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"restSource": "a22a01c4-3398-4030-8aee-08c56dec1123",
+					"restOperation": "287d50e9-ac1d-42af-b737-28db700d3955",
+					"data": []
+				},
+				{
+					"fieldNo": "3190cf11-8979-46cb-aa11-750409b87bef",
+					"fieldName": "init",
+					"fieldParent": 99999,
+					"fieldType": "neptune.Script",
+					"script": "file://script/neptune.Script/init.js",
+					"request": [],
+					"response": [],
+					"attributes": [],
+					"data": []
+				}
+			]
+		},
+		{
+			"fieldNo": 99998,
+			"data": []
+		}
+	],
+	"componentInterface": [],
+	"iaSettings": null,
+	"ver": "26.10.28.1243",
+	"application": "lt_ping",
+	"title": "LoadTest Ping",
+	"description": "Fires bursts of requests at GET /ping",
+	"enableFileStorage": false,
+	"enableManifest": false,
+	"enableStylesheet": false,
+	"enableObfuscate": false,
+	"onlyRunLaunchpad": false,
+	"disabled": false,
+	"loadLaunchpadCode": null,
+	"loadApplicationCode": null,
+	"appType": "A",
+	"ui5_m": false,
+	"ui5_f": false,
+	"ui5_table": false,
+	"ui5_tnt": false,
+	"ui5_uxap": false,
+	"ui5_integration": false,
+	"ui5_chart": false,
+	"ui5_dxp_ui": false,
+	"ui5_theme": "",
+	"ui5_version": "",
+	"ui5_language": "",
+	"ui5_url": "",
+	"cus_theme": "",
+	"css": "",
+	"compiledCss": "",
+	"header": "",
+	"manifest": "",
+	"globalScript": "",
+	"deleted": false,
+	"libHighchart": false,
+	"libHighmap": false,
+	"publicAccess": false,
+	"ui5_bootstrap": false,
+	"ui5_ionic": false,
+	"useV2AppHandler": false,
+	"compilerTarget": 3,
+	"tabWidth": 4,
+	"printWidth": 100,
+	"generateVersionOnActivation": false,
+	"disableIntelligence": false,
+	"activationHistoryCount": 5,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"apis": [
+		{
+			"id": "a22a01c4-3398-4030-8aee-08c56dec1123",
+			"name": "LoadTest",
+			"ver": "26.10.28.1428"
+		}
+	],
+	"i18n": []
+}

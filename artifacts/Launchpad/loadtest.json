@@ -1,0 +1,119 @@
+{
+	"id": "37944aa5-4bc1-44df-b5da-eeaf6660237b",
+	"createdAt": "2026-10-28T10:30:53.731Z",
+	"createdBy": "gunnar",
+	"extUserRoles": [],
+	"extUserDepartments": [],
+	"catOrder": [
+		"f995c956-c0e1-4be5-8874-27afc8c7bdd5",
+		"45034860-1a44-4a85-b729-bda082face14",
+		"97c47eac-dcb7-4618-b898-3bea90b8e97a",
+		"a6aa0f1c-bd1e-47fe-8bfc-d9223f9c4190"
+	],
+	"layout": [],
+	"config": {
+		"showAccessibilityFocusIndicator": true,
+		"enableTopMenu": true,
+		"oneLineTopMenu": true,
+		"showLaunchpadTitle": true,
+		"languages": [],
+		"locales": [],
+		"enhancement": ""
+	},
+	"enhancement": [],
+	"iaSettings": null,
+	"name": "loadtest",
+	"title": "Load Test",
+	"description": "Launchpad for the loadtest package: roles, layouts, nested groups",
+	"startApp": null,
+	"launchpadFooter": null,
+	"startWebApp": null,
+	"customLogo": null,
+	"launchpadApp": null,
+	"hideSidemenu": false,
+	"ui5Version": "",
+	"ui5Url": null,
+	"ui5Theme": "sap_horizon",
+	"header": null,
+	"customTheme": null,
+	"isExternal": false,
+	"emailPattern": null,
+	"loginApp": null,
+	"enableNotifications": false,
+	"firebaseProjectId": null,
+	"firebaseAppId": null,
+	"defaultLoginIDP": null,
+	"publicAccess": false,
+	"css": null,
+	"clientRequestTimeout": 120,
+	"limitWidth": false,
+	"searchBackgroundType": null,
+	"searchBackgroundColor": null,
+	"searchBackgroundShade": null,
+	"usedBackgroundType": null,
+	"usedBackgroundColor": null,
+	"usedBackgroundShade": null,
+	"searchEnableShadeCalc": null,
+	"usedEnableShadeCalc": null,
+	"enableTrace": false,
+	"ver": "26.10.28.1340",
+	"pwa_enable": false,
+	"pwa_title": null,
+	"pwa_customImageIos": null,
+	"pwa_customImageAndroidOld": null,
+	"pwa_customImageAndroidNew": null,
+	"pwa_desktopScreenshotWide": null,
+	"pwa_desktopScreenshotNarrow": null,
+	"pwa_displayMode": null,
+	"pwa_themeColor": null,
+	"layout_light": null,
+	"layout_dark": null,
+	"layout_preference": 0,
+	"pwa_backgroundColor": null,
+	"passwordResetEmail": null,
+	"activationCodeEmail": null,
+	"noSubmenuHover": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"agentId": null,
+	"enableIntelligentApps": null,
+	"iaAgentId": null,
+	"cat": [
+		{
+			"id": "f995c956-c0e1-4be5-8874-27afc8c7bdd5",
+			"name": "loadtest_main",
+			"title": "Load Test",
+			"ver": "26.10.28.1341"
+		},
+		{
+			"id": "a6aa0f1c-bd1e-47fe-8bfc-d9223f9c4190",
+			"name": "loadtest_admin",
+			"title": "Admin",
+			"ver": "26.10.28.1341"
+		},
+		{
+			"id": "97c47eac-dcb7-4618-b898-3bea90b8e97a",
+			"name": "loadtest_analytics",
+			"title": "Analytics",
+			"ver": "26.10.28.1341"
+		},
+		{
+			"id": "45034860-1a44-4a85-b729-bda082face14",
+			"name": "loadtest_operations",
+			"title": "Operations",
+			"ver": "26.10.28.1341"
+		}
+	],
+	"roles": [
+		{
+			"id": "4e3e47ff-ff10-44d9-8010-91a9f7ccd319",
+			"name": "LoadTest Admin",
+			"ver": "26.10.28.1328"
+		},
+		{
+			"id": "0f58c853-b95c-4597-9c4c-e53df57a5cdd",
+			"name": "LoadTest Operator",
+			"ver": "26.10.28.1328"
+		}
+	],
+	"i18n": []
+}

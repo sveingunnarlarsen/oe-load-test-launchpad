@@ -1,0 +1,155 @@
+{
+	"id": "390e4586-afbb-4777-a145-2a526fcdf7c3",
+	"createdAt": "2026-10-28T12:27:43.521Z",
+	"createdBy": "gunnar",
+	"settings": {
+		"properties": {
+			"report": {
+				"title": "Customer totals",
+				"subTitle": "Maintained by the LoadTest Recalc job",
+				"autoRun": true,
+				"autoRunFocus": true,
+				"enableRun": true,
+				"enableCreate": false,
+				"enableDelete": false,
+				"enableExport": true,
+				"enableMultiSelect": false,
+				"enableVariant": false,
+				"hideHeader": false,
+				"iconButtonExport": "sap-icon://excel-attachment",
+				"typeButtonExport": "Transparent",
+				"searchLabel": "Search",
+				"searchPlaceholder": ""
+			},
+			"form": {},
+			"table": {}
+		},
+		"fieldCatalog": [
+			{
+				"name": "customer",
+				"label": "Customer",
+				"type": "smalltext",
+				"usage": "BOTH"
+			},
+			{
+				"name": "orderCount",
+				"label": "Orders",
+				"type": "integer",
+				"usage": "BOTH"
+			},
+			{
+				"name": "totalAmount",
+				"label": "Total amount",
+				"type": "decimal",
+				"usage": "BOTH"
+			},
+			{
+				"name": "lastOrderAt",
+				"label": "Last order",
+				"type": "smalltext",
+				"usage": "BOTH"
+			},
+			{
+				"name": "createdAt",
+				"label": "Created At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			},
+			{
+				"name": "updatedAt",
+				"label": "Updated At",
+				"type": "timestamp",
+				"usage": "BOTH"
+			}
+		],
+		"fieldsSel": [
+			{
+				"name": "customer",
+				"text": "Customer",
+				"visible": true,
+				"fieldPos": 1
+			}
+		],
+		"fieldsRun": [
+			{
+				"name": "customer",
+				"text": "Customer",
+				"fieldPos": 1,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "orderCount",
+				"text": "Orders",
+				"fieldPos": 2,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "totalAmount",
+				"text": "Total amount",
+				"fieldPos": 3,
+				"visible": true,
+				"enableFilter": true,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block"
+			},
+			{
+				"name": "updatedAt",
+				"text": "Recalculated",
+				"fieldPos": 4,
+				"visible": true,
+				"enableFilter": false,
+				"enableSort": true,
+				"buttonType": "Transparent",
+				"popinDisplay": "Block",
+				"formatter": "date00",
+				"width": "200px"
+			}
+		],
+		"defaultVariant": {
+			"id": "2719a157-9b18-4bc0-a899-74429d55c26c",
+			"colOrder": "key_a_to_z",
+			"rowOrder": "key_a_to_z",
+			"row": [],
+			"column": [],
+			"val": [],
+			"inclusions": {},
+			"exclusions": {}
+		},
+		"translation": {
+			"EN": {
+				"report": {},
+				"form": {},
+				"table": {},
+				"fieldCatalog": {}
+			}
+		},
+		"table": "lt_customer_stats"
+	},
+	"name": "lt_customer_stats_list",
+	"description": "Customer totals",
+	"group": "LoadTest",
+	"type": "C",
+	"connectorid": "fd9bd85e-5731-4214-b0cc-f046c0583c17",
+	"scriptSel": null,
+	"scriptRun": null,
+	"tableid": null,
+	"ver": "26.10.28.1327",
+	"disabled": false,
+	"appType": "A",
+	"application": "neptunedxp_adaptive_list",
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"roles": [],
+	"scriptSelObj": null,
+	"scriptRunObj": null,
+	"tableObj": null,
+	"i18n": []
+}

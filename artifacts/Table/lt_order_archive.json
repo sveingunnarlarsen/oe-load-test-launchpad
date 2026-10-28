@@ -1,0 +1,85 @@
+{
+	"id": "80bb67b0-25fb-40c2-8839-9d8ac6424a7d",
+	"createdAt": "2026-10-28T12:06:23.736Z",
+	"createdBy": "gunnar",
+	"fields": [
+		{
+			"id": "1817f2fc-3154-4ca2-b6be-908bcb3d3aa6",
+			"fieldName": "orderNo",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Order number"
+		},
+		{
+			"id": "b6630bf0-457f-4718-8cbd-8f72bd6578f7",
+			"fieldName": "customer",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Customer"
+		},
+		{
+			"id": "851c6dee-d6c9-4870-85f1-a587fa422c3d",
+			"fieldName": "product",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Product"
+		},
+		{
+			"id": "bb5f5440-6116-4aa5-b29c-8905158d4b56",
+			"fieldName": "quantity",
+			"fieldType": "integer",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Quantity"
+		},
+		{
+			"id": "210c3de4-dd46-402c-b870-01d4a94ed3ec",
+			"fieldName": "amount",
+			"fieldType": "decimal",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Amount",
+			"precision": 12,
+			"scale": 2
+		},
+		{
+			"id": "b9eaa8dc-65c5-4d08-8bb6-4fcc5738556c",
+			"fieldName": "status",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Status"
+		},
+		{
+			"id": "4ac8e759-0c2e-48de-afc8-94aeb425402d",
+			"fieldName": "notes",
+			"fieldType": "mediumtext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Notes"
+		},
+		{
+			"id": "fe5a0a23-bcb4-4ea6-8060-d27734421387",
+			"fieldName": "archivedFrom",
+			"fieldType": "smalltext",
+			"isUnique": false,
+			"isNullable": true,
+			"description": "Source id"
+		}
+	],
+	"indices": [],
+	"foreignKeys": [],
+	"vectorStoreConfig": null,
+	"name": "lt_order_archive",
+	"description": "Archived load test orders",
+	"ver": "26.10.28.1306",
+	"enableAudit": false,
+	"includeDataInPackage": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230",
+	"generationStrategy": null,
+	"rolesRead": [],
+	"rolesWrite": []
+}

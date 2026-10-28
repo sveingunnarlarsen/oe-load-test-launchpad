@@ -1,0 +1,21 @@
+{
+	"id": "594afb98-b931-43f7-972f-b32715b16ffa",
+	"createdAt": "2026-10-28T10:26:17.037Z",
+	"createdBy": "gunnar",
+	"metadata": [],
+	"name": "ltAmount",
+	"description": "Formats an order amount with two decimals",
+	"group": "LoadTest",
+	"snippetType": "formatter",
+	"content": [
+		"==OBJECT STRING==",
+		"function ltAmount(value) {",
+		"    return Number(value || 0).toFixed(2);",
+		"}",
+		""
+	],
+	"icon": null,
+	"enableIDE": false,
+	"enableServerScript": false,
+	"package": "c3326ab5-fe5a-497e-8fa7-fc4723e77230"
+}
